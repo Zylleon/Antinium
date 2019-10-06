@@ -3,7 +3,7 @@
 
 <!--Starting pawn for players-->
 
-  <PawnKindDef Abstract="True" Name="BaseBoldPawnkind">
+  <PawnKindDef Abstract="True" Name="Ant_AntiniumBasePawnkind">
     <race>Ant_AntiniumRace</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
@@ -12,7 +12,7 @@
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseBoldPawnkind">
+  <PawnKindDef ParentName="Ant_AntiniumBasePawnkind">
     <defName>Antinium</defName>
     <label>antinium</label>
     <defaultFactionType>Ant_AntiniumHivePlayer</defaultFactionType>
