@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonAntinium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name(p=3)->[Chess]</li>
+		<li>name->[Syla]</li>
+		<li>name(p=3)->[Syla][Syla]</li>
+		<li>name(p=2)->[Syla][Syla][Syla]</li>
+		<li>name->[Syla][Syla][Syla][Syla]</li>
+		<li>name(p=2)->[Job][Number]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Chess</keyword>
+          <path>Antinium_Names/Chess</path>
+        </li>
+		<li Class="Rule_File">
+          <keyword>Syla</keyword>
+          <path>Antinium_Names/Antinium_Syllables</path>
+        </li>
+		<li Class="Rule_File">
+          <keyword>Number</keyword>
+          <path>Antinium_Names/Ant_Numbers</path>
+        </li>
+		<li Class="Rule_File">
+          <keyword>Job</keyword>
+          <path>Antinium_Names/Ant_Job_Titles</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+</Defs>

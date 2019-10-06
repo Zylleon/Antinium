@@ -1,0 +1,8 @@
+Worker 
+Archer 
+Digger 
+Soldier 
+Drone 
+Builder 
+Carpenter 
+Laborer 

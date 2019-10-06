@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.BackstoryDef>
+    <defName>Ant_Larva</defName>
+    <title>Larva</title>
+    <titleShort>Larva</titleShort>
+    <baseDescription>[PAWN_nameDef] was a larva.</baseDescription>
+	<slot>Childhood</slot>
+	<spawnCategories>
+      <li>Ant_AntiniumBackstory</li>
+    </spawnCategories>	
+</AlienRace.BackstoryDef>
+
+</Defs>

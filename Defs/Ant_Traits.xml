@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>Ant_BirdLover</defName>
+    <commonality>0.6</commonality>
+    <degreeDatas>
+      <li>
+        <label>bird lover</label>
+        <description>{PAWN_nameDef} loves birds.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <!--thoughts-->
+  
+  
+  <ThoughtDef>
+    <defName>BirdLeatherApparelHappy</defName>
+    <workerClass>AntiniumRaceCode.ThoughtWorker_BirdLoverApparel</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>bird leather {0}</label>
+        <description>I enjoy wearing the suffering of others.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+			<li>
+				<label>bird leather {0} (+1)</label>
+				<description>This will scare them. All will know my power.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>bird leather {0} (+2)</label>
+				<description>The faces on my clothes aren't smiling, but they make *me* happy.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>bird leather {0} etc</label>
+				<description>The flesh! The flesh signals my triumph!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+    </stages>
+		<requiredTraits>
+			<li>Ant_BirdLover</li>
+		</requiredTraits>
+  </ThoughtDef>
+	
+	
+	
+  <ThoughtDef>
+    <defName>Ant_AteBirdMeatDirect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Ant_BirdLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>raw cannibalism</label>
+        <description>I ate the meat of another human, raw, like an animal. It was so... succulent.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	<ThoughtDef>
+    <defName>Ant_AteBirdMeatAsIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Ant_BirdLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cooked cannibalism</label>
+        <description>I ate a meal made from the meat of another human. So pleasurable. If only I had some fava beans and a nice chianti.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

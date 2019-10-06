@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>Antinium Playable Race</name>
+  <author>Zylle</author>
+  <supportedVersions><li>1.0</li></supportedVersions>
+  <description>
+    Adds a new playable race based on the Antinium from the Wandering Inn web serial
+  </description>
+</ModMetaData>
