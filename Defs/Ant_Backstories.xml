@@ -6,6 +6,7 @@
     <title>Silent Antinium</title>
     <titleShort>Silent</titleShort>
     <baseDescription>[PAWN_nameDef] was trained in the ways of old, a silent and deadly assassin.</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -50,6 +51,7 @@
     <title>Antinium Soldier</title>
     <titleShort>Soldier</titleShort>
     <baseDescription>[PAWN_nameDef] served [PAWN_possessive] hive by fighting on the front lines.</baseDescription>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -100,6 +102,7 @@
     <title>Worker Drone</title>
     <titleShort>Worker</titleShort>
     <baseDescription>[PAWN_nameDef] does manual labor for [PAWN_possessive] hive</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -139,6 +142,7 @@
     <title>Drone</title>
     <titleShort>Drone</titleShort>
     <baseDescription>[PAWN_nameDef] does manual labor for [PAWN_possessive] hive</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -180,6 +184,7 @@
     <title>Twisted Antinium</title>
     <titleShort>Twisted</titleShort>
     <baseDescription>[PAWN_nameDef] focuses on biological experiments.</baseDescription>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -229,6 +234,7 @@
     <title>Flying Antinium</title>
     <titleShort>Flying</titleShort>
     <baseDescription>Flying antinium</baseDescription>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -269,6 +275,7 @@
     <title>Painted Soldier</title>
     <titleShort>Worker</titleShort>
     <baseDescription>[PAWN_nameDef] is a Painted Soldier. Focosed on melee, but also capable of individual thought.</baseDescription>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -305,6 +312,7 @@
     <title>Individual Antinium</title>
     <titleShort>Individual</titleShort>
     <baseDescription>[PAWN_nameDef] is a full individual, able to think for [PAWN_pronoun]self outside of the structure of [PAWN_possessive] hive.</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -334,6 +342,7 @@
     <title>Autonomous Antinium</title>
     <titleShort>Autonomous</titleShort>
     <baseDescription>[PAWN_nameDef] is a not quite a full individual, but has started to be able to think for [PAWN_pronoun]self outside of the structure of [PAWN_possessive] hive.</baseDescription>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -359,6 +368,7 @@
     <title>Listener</title>
     <titleShort>Listener</titleShort>
     <baseDescription>[PAWN_nameDef] specialized in digging tunnels and listening for information.</baseDescription>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -402,6 +412,7 @@
     <title>Custodium</title>
     <titleShort>Custodium</titleShort>
     <baseDescription>Custodium</baseDescription>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
@@ -434,6 +445,7 @@
     <title>Cave Tender</title>
     <titleShort>Tender</titleShort>
     <baseDescription>[PAWN_nameDef] stayed in the cave foraging for edible roots and fungi, and caring for the other Antinium of the hive.</baseDescription>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
       <li>Ant_AntiniumBackstory</li>
