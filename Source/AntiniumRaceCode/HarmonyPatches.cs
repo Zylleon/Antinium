@@ -34,6 +34,8 @@ namespace AntiniumRaceCode
             harmony.Patch(targetmethod, prefixmethod, null);
         }
 
+        /*
+        
         public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
         {
 
@@ -61,6 +63,8 @@ namespace AntiniumRaceCode
                 ingestThoughts.Add(ingredient.ingestible.specialThoughtAsIngredient);
             }
         }
+        */
+
 
         // This method is now always called right before RimWorld.FoodUtility.AddFoodPoisoningHediff.
         public static bool AddFoodPoisoningHediff_Prefix(Pawn pawn)

@@ -10,6 +10,7 @@
 	  <PsychicSensitivity>1.2</PsychicSensitivity>
 	  <ToxicSensitivity>.8</ToxicSensitivity>
 	  <FoodPoisonChance>5</FoodPoisonChance>
+	  <HungerRateMultiplier>0.9</HungerRateMultiplier>
 	<!--animals-->
 	  <TameAnimalChance>.75</TameAnimalChance>
 	  <TrainAnimalChance>.9</TrainAnimalChance>
@@ -32,9 +33,13 @@
 	  <TradePriceImprovement>.8</TradePriceImprovement>
 	  <SocialImpact>1.1</SocialImpact>
 	  
-	 <!--combat-->
+	 <!--combat & health-->
 	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <MeleeDodgeChance>10</MeleeDodgeChance>
+	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+	  
+	  
 	  <!--TODO: melee and ranged attack multipliers-->
 	  
 	 <!--TODO: Leather/meat amount and type-->

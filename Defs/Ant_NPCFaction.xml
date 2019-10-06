@@ -60,9 +60,9 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Ant_Penitent>5</Ant_Penitent>
-          <Ant_Warrior>5</Ant_Warrior>
-          <Ant_Archer>10</Ant_Archer>
+          <Ant_LightInfantry>5</Ant_LightInfantry>
+          <Ant_HeavyInfantry>5</Ant_HeavyInfantry>
+          <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
           <Ant_Berserker>5</Ant_Berserker>
@@ -75,7 +75,7 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
-          <Ant_Archer>10</Ant_Archer>
+          <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
           <Ant_ChiefRanged>5</Ant_ChiefRanged>
@@ -86,8 +86,8 @@
         <kindDef>Combat</kindDef>
         <commonality>60</commonality>
         <options>
-          <Ant_Penitent>10</Ant_Penitent>
-          <Ant_Warrior>10</Ant_Warrior>
+          <Ant_LightInfantry>10</Ant_LightInfantry>
+          <Ant_HeavyInfantry>10</Ant_HeavyInfantry>
           <Ant_Berserker>10</Ant_Berserker>
           <Ant_ChiefMelee>5</Ant_ChiefMelee>
       </options>
@@ -96,8 +96,8 @@
         <!-- Peaceful -->
         <kindDef>Peaceful</kindDef>
         <options>
-          <Ant_Warrior>20</Ant_Warrior>
-          <Ant_Archer>10</Ant_Archer>
+          <Ant_HeavyInfantry>20</Ant_HeavyInfantry>
+          <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
           <Ant_Berserker>5</Ant_Berserker>
@@ -117,8 +117,8 @@
           <Elephant>2</Elephant>
         </carriers>
         <guards>
-          <Ant_Warrior>7</Ant_Warrior>
-          <Ant_Archer>10</Ant_Archer>
+          <Ant_HeavyInfantry>7</Ant_HeavyInfantry>
+          <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
           <Ant_Berserker>7</Ant_Berserker>
@@ -127,8 +127,8 @@
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Ant_Warrior>7</Ant_Warrior>
-          <Ant_Archer>10</Ant_Archer>
+          <Ant_HeavyInfantry>7</Ant_HeavyInfantry>
+          <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
           <Ant_Berserker>7</Ant_Berserker>

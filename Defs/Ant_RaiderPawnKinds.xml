@@ -18,13 +18,37 @@
     </apparelTags>
   </PawnKindDef>
 
-  <!-- Poverty tier - penitent -->
+  <!-- light infantry - naked, unarmed melee -->
 
   <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">
-    <defName>Ant_Penitent</defName>
-    <label>penitent</label>
+    <defName>Ant_LightInfantry</defName>
+    <label>light infantry</label>
+    <combatPower>15</combatPower>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <apparelMoney>
+      <min>0</min>
+      <max>0</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+  </PawnKindDef>
+<!-- light melee-->
+<PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">
+    <defName>Ant_Infantry</defName>
+    <label>infantry</label>
     <combatPower>35</combatPower>
-    <chemicalAddictionChance>0.10</chemicalAddictionChance>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
     <itemQuality>Poor</itemQuality>
     <gearHealthRange>
@@ -32,12 +56,12 @@
       <max>1.1</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>50</min>
-      <max>100</max>
+      <min>30</min>
+      <max>80</max>
     </apparelMoney>
     <weaponMoney>
-      <min>90</min>
-      <max>150</max>
+      <min>0</min>
+      <max>120</max>
     </weaponMoney>
     <weaponTags>
       <li>NeolithicMeleeBasic</li>
@@ -52,28 +76,30 @@
     <techHediffsChance>0.15</techHediffsChance>
   </PawnKindDef>
 
-  <!-- Low tier - archer -->
 
-  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">
-		<defName>Ant_Archer</defName>
-		<label>archer</label>
-    <combatPower>48</combatPower>
+<PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">
+    <defName>Ant_HeavyInfantry</defName>
+    <label>heavy infantry</label>
+    <combatPower>45</combatPower>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
     <itemQuality>Poor</itemQuality>
     <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
+      <min>0.2</min>
+      <max>1.1</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>180</min>
-      <max>350</max>
+      <min>50</min>
+      <max>100</max>
     </apparelMoney>
     <weaponMoney>
-		<min>80</min>
-		<max>80</max>
-	</weaponMoney>
-	<weaponTags>
-		<li>NeolithicRangedBasic</li>
-	</weaponTags>
+      <min>90</min>
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+	  <li>MedievalMeleeBasic</li>
+    </weaponTags>
     <techHediffsMoney>
       <min>50</min>
       <max>50</max>
@@ -81,36 +107,12 @@
     <techHediffsTags>
       <li>Poor</li>
     </techHediffsTags>
-    <techHediffsChance>0.03</techHediffsChance>
-	</PawnKindDef>
-
-  <!-- Mid tier - warrior, hunter, trader -->
-  
-  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">
-    <defName>Ant_Warrior</defName>
-    <label>warrior</label>
-    <combatPower>60</combatPower>
-    <itemQuality>Poor</itemQuality>
-    <canBeSapper>true</canBeSapper>
-    <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
-    </gearHealthRange>
-    <apparelMoney>
-      <min>200</min>
-      <max>300</max>
-    </apparelMoney>
-    <apparelRequired>
-      <li>Apparel_WarVeil</li>
-    </apparelRequired>
-    <weaponMoney>
-      <min>150</min>
-      <max>150</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>NeolithicMeleeDecent</li>
-    </weaponTags>
+    <techHediffsChance>0.15</techHediffsChance>
   </PawnKindDef>
+
+  <!-- TODO: From here on out -->
+  <!-- Mid tier - warrior, hunter, trader -->
+
 
   <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind" Name="Ant_Hunter">
     <defName>Ant_Hunter</defName>
