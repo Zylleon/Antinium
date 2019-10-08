@@ -34,36 +34,48 @@ namespace AntiniumRaceCode
             harmony.Patch(targetmethod, prefixmethod, null);
         }
 
-        /*
+
         
+
+        /*
         public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
         {
-
-            if (ingester.story.traits.allTraits.Any(tr => tr.def.defName == "Ant_BirdLover"))
+            if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
             {
                 if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
                 {
-                    // ingestThoughts.Add();                // TODO: figure out how to identify my new thought so it can be added
+                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);                // TODO: figure out how to identify my new thought so it can be added
 
-                    
+
                 }
 
             }
+            /*
+
+            //if (ingester.story.traits.allTraits.Any(tr => tr.def.defName == "Ant_BirdLover"))
+            //{
+            //    if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
+            //    {
+            //        ingestThoughts.Add(ThoughtDefOf.Ant_AteBirdMeatAsIngredient);                // TODO: figure out how to identify my new thought so it can be added
+
+                    
+            //    }
+
+            //}
 
 
 
-
-
-            if (ingester.RaceProps.Humanlike && FoodUtility.IsHumanlikeMeat(ingredient))
-            {
-                ingestThoughts.Add((!ingester.story.traits.HasTrait(TraitDefOf.Cannibal)) ? ThoughtDefOf.AteHumanlikeMeatAsIngredient : ThoughtDefOf.AteHumanlikeMeatAsIngredientCannibal);
-            }
-            else if (ingredient.ingestible.specialThoughtAsIngredient != null)
-            {
-                ingestThoughts.Add(ingredient.ingestible.specialThoughtAsIngredient);
-            }
+            //if (ingester.RaceProps.Humanlike && FoodUtility.IsHumanlikeMeat(ingredient))
+            //{
+            //    ingestThoughts.Add((!ingester.story.traits.HasTrait(TraitDefOf.Cannibal)) ? ThoughtDefOf.AteHumanlikeMeatAsIngredient : ThoughtDefOf.AteHumanlikeMeatAsIngredientCannibal);
+            //}
+            //else if (ingredient.ingestible.specialThoughtAsIngredient != null)
+            //{
+            //    ingestThoughts.Add(ingredient.ingestible.specialThoughtAsIngredient);
+            //}
+            //
         }
-        */
+            */
 
 
         // This method is now always called right before RimWorld.FoodUtility.AddFoodPoisoningHediff.

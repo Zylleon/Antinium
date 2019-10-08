@@ -50,7 +50,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThoughtWorker_BirdLoverApparel.cs" />
+    <Compile Include="AntDefOf.cs" />
+    <Compile Include="ThoughtWorker_BirdLover.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

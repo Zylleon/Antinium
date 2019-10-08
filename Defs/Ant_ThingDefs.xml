@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="LeatherBase">
+    <defName>Ant_AntiniumLeather</defName>
+    <label>antinium leather</label>
+    <description>Antinium leather. It's dark brown.</description>
+    <graphicData>
+      <color>(115,55,44)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.5</MarketValue>
+      <StuffPower_Armor_Sharp>1.02</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>21</StuffPower_Insulation_Cold>
+	  <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(115,55,44)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  
+</Defs>

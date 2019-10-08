@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using RimWorld;
+using Verse;
+
+namespace AntiniumRaceCode
+{
+    public class ThoughtWorker_BirdLoverApparel : ThoughtWorker
+    {
+        protected override ThoughtState CurrentStateInternal(Pawn p)
+        {
+            string text = null;
+            int num = 0;
+            List<Apparel> wornApparel = p.apparel.WornApparel;
+            for (int i = 0; i < wornApparel.Count; i++)
+            {
+                if (wornApparel[i].Stuff.defName == "Leather_Bird")
+                {
+                    if (text == null)
+                    {
+                        text = wornApparel[i].def.label;
+                    }
+                    num++;
+                }
+            }
+
+           
+            if (num == 0)
+            {
+                return ThoughtState.Inactive;
+            }
+            if (num >= 5)
+            {
+                return ThoughtState.ActiveAtStage(4, text);
+            }
+            return ThoughtState.ActiveAtStage(num - 1, text);
+        }
+    }
+
+
+
+    public class ThoughtWorker_BirdLoverSawBird : ThoughtWorker
+    {
+        private const float radius = 12f;
+
+        protected override ThoughtState CurrentStateInternal(Pawn pawn)
+        {
+            if (!pawn.Spawned || !pawn.RaceProps.Humanlike)
+            {
+                return false;
+            }
+            if (!pawn.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
+            {
+                return false;
+            }
+            List<Pawn> mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
+
+            List<Pawn> birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
+
+            int birds = birdPawns.Count(c => c.Position.InHorDistOf(pawn.Position, radius));
+
+            if (birds > 0)
+            {
+                return ThoughtState.ActiveAtStage(Math.Min(birds-1, 4));
+            }
+
+            // mapPawns.Count(c => (c.RaceProps.body.defName == "Bird" || c.RaceProps.leatherDef.defName == "Leather_Bird") && c.Position.InHorDistOf(pawn.Position, radius))
+
+            /*
+            for (int i = 0; i < mapPawns.Count; i++)
+            {
+                if (mapPawns[i].Spawned && !mapPawns[i].RaceProps.Humanlike)
+                {
+                    if (mapPawns[i].RaceProps.body.defName == "Bird" || mapPawns[i].RaceProps.leatherDef.defName == "Leather_Bird")
+                    {
+                        if (pawn.Position.InHorDistOf(mapPawns[i].Position, radius))
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            */
+
+
+            return false;
+
+        }
+    }
+
+}
