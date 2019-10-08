@@ -7,7 +7,7 @@
 	<statBases>
       <MarketValue>700</MarketValue>
 	  
-	  <PsychicSensitivity>1.2</PsychicSensitivity>
+	  <PsychicSensitivity>1.07</PsychicSensitivity>
 	  <ToxicSensitivity>.8</ToxicSensitivity>
 	  <FoodPoisonChance>5</FoodPoisonChance>
 	  <HungerRateMultiplier>0.9</HungerRateMultiplier>

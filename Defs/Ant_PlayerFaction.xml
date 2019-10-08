@@ -2,6 +2,7 @@
 <Defs>
 
   <FactionDef Abstract="True" Name="Ant_AntiniumHiveBase">
+
     <colorSpectrum>
       <li>(0, 0.737, 0.847)</li>
     </colorSpectrum>
@@ -21,8 +22,8 @@
     <backstoryCategories>
 		<li>Ant_AntiniumBackstory</li>
   	</backstoryCategories>
-    <expandingIconTexture>Things/Building/Natural/Hive</expandingIconTexture>
-		<homeIconPath>Things/Building/Natural/Hive</homeIconPath>
+	<homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+    <expandingIconTexture>Misc/PlayerHive</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>

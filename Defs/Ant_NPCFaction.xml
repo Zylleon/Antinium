@@ -11,14 +11,14 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canStageAttacks>true</canStageAttacks>
-    <expandingIconTexture>Things/Building/Natural/Hive</expandingIconTexture>
+    <expandingIconTexture>Misc/Hive</expandingIconTexture>
 		<geneticVariance>0.1</geneticVariance>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-    <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+    <pawnNameMaker>NamerPersonAntinium</pawnNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryCategories>
-      <li>Tribal</li>
+      <li>Ant_AntiniumBackstory</li>
     </backstoryCategories>
     <leaderTitle>chief</leaderTitle>
     <hairTags>
@@ -65,7 +65,7 @@
           <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Berserker>5</Ant_Berserker>
+          <Ant_Archer>5</Ant_Archer>
           <Ant_ChiefRanged>3</Ant_ChiefRanged>
           <Ant_ChiefMelee>1.5</Ant_ChiefMelee>
         </options>
@@ -88,7 +88,7 @@
         <options>
           <Ant_LightInfantry>10</Ant_LightInfantry>
           <Ant_HeavyInfantry>10</Ant_HeavyInfantry>
-          <Ant_Berserker>10</Ant_Berserker>
+          <Ant_Archer>10</Ant_Archer>
           <Ant_ChiefMelee>5</Ant_ChiefMelee>
       </options>
       </li>
@@ -100,7 +100,7 @@
           <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Berserker>5</Ant_Berserker>
+          <Ant_Archer>5</Ant_Archer>
           <Ant_ChiefRanged>3</Ant_ChiefRanged>
           <Ant_ChiefMelee>1.5</Ant_ChiefMelee>
         </options>
@@ -121,7 +121,7 @@
           <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Berserker>7</Ant_Berserker>
+          <Ant_Archer>7</Ant_Archer>
         </guards>
       </li>
       <li>
@@ -131,7 +131,7 @@
           <Ant_Infantry>10</Ant_Infantry>
           <Ant_Hunter>10</Ant_Hunter>
           <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Berserker>7</Ant_Berserker>
+          <Ant_Archer>7</Ant_Archer>
           <Ant_ChiefRanged>10</Ant_ChiefRanged>
         </options>
       </li>
