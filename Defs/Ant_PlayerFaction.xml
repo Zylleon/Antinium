@@ -17,7 +17,7 @@
     <pawnsPlural>antinium</pawnsPlural>
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<factionNameMaker>Ant_NamerFactionAntinium</factionNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryCategories>
 		<li>Ant_AntiniumBackstory</li>

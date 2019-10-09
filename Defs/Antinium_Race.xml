@@ -40,10 +40,16 @@
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  
 	  
-	  <!--TODO: melee and ranged attack multipliers-->
+	  <!-- TODO: melee and ranged attack multipliers -->
 	  
+	<!-- AimingDelayFactor -->
+	<!-- ShootingAccuracyPawn -->
+
+
 	 <!--TODO: Leather/meat amount and type-->
     </statBases>
+	
+
     <alienRace>
         <generalSettings>
 			<canLayDown>false</canLayDown>
@@ -65,18 +71,33 @@
 				<useGenderedHeads>false</useGenderedHeads>
 				<alienskincolorgen Class="ColorGenerator_Options">
                 <options>
+				<!-- reddish -->
                     <li>
                         <weight>5</weight>
                         <only>RGBA(0.16,0.14,0.14,1)</only>
                     </li>
-                    <li>
-                        <weight>5</weight>
-                        <only>RGBA(.25,.18,.06,1)</only>
-                    </li>
-                    <li>
+					<li>
                         <weight>5</weight>
                         <only>RGBA(.16,.08,.05,1)</only>
                     </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.31,.21,.2,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.18,.13,.11,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.25,.11,.08,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.27,.15,.14,1)</only>
+                    </li>
+					
+				<!-- browns -->
 					<li>
                         <weight>5</weight>
                         <only>RGBA(.20,.16,.14,1)</only>
@@ -87,10 +108,37 @@
                     </li>
 					<li>
                         <weight>5</weight>
-                        <only>RGBA(.31,.21,.2,1)</only>
+                        <only>RGBA(.23,.14,.11,1)</only>
                     </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.18,.11,.08,1)</only>
+                    </li>
+				<!-- yellow ish -->
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.25,.18,.06,1)</only>
+                    </li>
+					
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.27,.19,.13,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.23,.16,.08,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.18,.11,.05,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(.20,.13,.04,1)</only>
+                    </li>
+					
                 </options>
-            </alienskincolorgen>
+				</alienskincolorgen>
 			</alienPartGenerator>
 	<!--TODO: make resistant to alcohol, possibly resistant to other drugs -->		
 			<chemicalSettings>

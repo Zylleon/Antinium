@@ -59,31 +59,16 @@ namespace AntiniumRaceCode
 
             List<Pawn> birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
 
-            int birds = birdPawns.Count(c => c.Position.InHorDistOf(pawn.Position, radius));
-
-            if (birds > 0)
+            if (birdPawns.Count > 0)
             {
-                return ThoughtState.ActiveAtStage(Math.Min(birds-1, 4));
-            }
 
-            // mapPawns.Count(c => (c.RaceProps.body.defName == "Bird" || c.RaceProps.leatherDef.defName == "Leather_Bird") && c.Position.InHorDistOf(pawn.Position, radius))
+                int birds = birdPawns.Count(c => c.Position.InHorDistOf(pawn.Position, radius));
 
-            /*
-            for (int i = 0; i < mapPawns.Count; i++)
-            {
-                if (mapPawns[i].Spawned && !mapPawns[i].RaceProps.Humanlike)
+                if (birds > 0)
                 {
-                    if (mapPawns[i].RaceProps.body.defName == "Bird" || mapPawns[i].RaceProps.leatherDef.defName == "Leather_Bird")
-                    {
-                        if (pawn.Position.InHorDistOf(mapPawns[i].Position, radius))
-                        {
-                            return true;
-                        }
-                    }
+                    return ThoughtState.ActiveAtStage(Math.Min(birds - 1, 4));
                 }
             }
-            */
-
 
             return false;
 

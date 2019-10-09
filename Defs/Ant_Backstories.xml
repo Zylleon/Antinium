@@ -59,7 +59,7 @@
 	<skillGains>
       <li>
         <defName>Melee</defName>
-        <amount>10</amount>
+        <amount>8</amount>
       </li>
 	  <li>
         <defName>Shooting</defName>
@@ -273,7 +273,7 @@
 <AlienRace.BackstoryDef>
     <defName>Ant_PaintedSoldier</defName>
     <title>Painted Soldier</title>
-    <titleShort>Worker</titleShort>
+    <titleShort>Soldier</titleShort>
     <baseDescription>[PAWN_nameDef] is a Painted Soldier. Focosed on melee, but also capable of individual thought.</baseDescription>
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
@@ -286,8 +286,8 @@
         <amount>10</amount>
       </li>
 	  <li>
-        <defName>Crafting</defName>
-        <amount></amount>
+        <defName>Artistic</defName>
+        <amount>7</amount>
       </li>
 	  <li>
         <defName>Construction</defName>
@@ -296,7 +296,6 @@
     </skillGains>
 	<workDisables>
         <li>Social</li>
-		<li>Artistic</li> 
 		<li>Caring</li>
     </workDisables>
 	<forcedTraits>

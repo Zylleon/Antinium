@@ -13,7 +13,7 @@
     <canStageAttacks>true</canStageAttacks>
     <expandingIconTexture>Misc/Hive</expandingIconTexture>
 		<geneticVariance>0.1</geneticVariance>
-    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <factionNameMaker>Ant_NamerFactionAntinium</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <pawnNameMaker>NamerPersonAntinium</pawnNameMaker>
     <techLevel>Neolithic</techLevel>

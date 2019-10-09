@@ -62,7 +62,7 @@
       <max>80</max>
     </apparelMoney>
     <weaponMoney>
-      <min>0</min>
+      <min>41</min>
       <max>120</max>
     </weaponMoney>
     <weaponTags>
@@ -128,7 +128,7 @@
       <max>350</max>
     </apparelMoney>
     <weaponMoney>
-			<min>44</min>
+			<min>45</min>
 			<max>100</max>
 		</weaponMoney>
 		<weaponTags>
