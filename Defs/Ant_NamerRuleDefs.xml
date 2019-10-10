@@ -11,7 +11,7 @@
 		<li>name(p=3)->[Syla][Syla]</li>
 		<li>name(p=2)->[Syla][Syla][Syla]</li>
 		<li>name->[Syla][Syla][Syla][Syla]</li>
-		<li>name(p=2)->[Job][Number]</li>
+		<!--<li>name(p=2)->[Job][Number]</li>-->
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -41,7 +41,7 @@
     <rulePack>
       <rulesStrings>
         <li>r_name->The [AdjectiveAny] [ant_group]</li>
-		<li>r_name->The [ant_group] of [AdjectiveAny]</li>
+		<li>r_name->The [ant_group] of [AdjectiveAny] [TerrainFeature]</li>
 		<li>r_name->The [ant_group] of [PlaceOutlander]</li>
 		<li>r_name->The [AdjectiveAny] [ant_group] of [PlaceOutlander]</li>
 		<li>r_name->The [Colors_Badass] [ant_group] of [PlaceOutlander]</li>

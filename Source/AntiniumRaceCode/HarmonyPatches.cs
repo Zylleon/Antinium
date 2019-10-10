@@ -37,7 +37,7 @@ namespace AntiniumRaceCode
 
         
 
-        /*
+        
         public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
         {
             if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
@@ -50,7 +50,7 @@ namespace AntiniumRaceCode
                 }
 
             }
-            /*
+            
 
             //if (ingester.story.traits.allTraits.Any(tr => tr.def.defName == "Ant_BirdLover"))
             //{
@@ -75,7 +75,6 @@ namespace AntiniumRaceCode
             //}
             //
         }
-            */
 
 
         // This method is now always called right before RimWorld.FoodUtility.AddFoodPoisoningHediff.

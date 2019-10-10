@@ -6,7 +6,7 @@
     <label>antinium leather</label>
     <description>Antinium leather. It's dark brown.</description>
     <graphicData>
-      <color>(115,55,44)</color>
+      <color>(87,35,16)</color>
     </graphicData>
     <statBases>
       <MarketValue>4.5</MarketValue>
@@ -15,7 +15,7 @@
 	  <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(115,55,44)</color>
+      <color>(87,35,16</color>
       <commonality>0.0025</commonality>
     </stuffProps>
   </ThingDef>
