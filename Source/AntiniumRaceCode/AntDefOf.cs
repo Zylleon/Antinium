@@ -12,10 +12,13 @@ namespace AntiniumRaceCode
     public static class AntDefOf
     {
         public static TraitDef Ant_BirdLover;
+
         public static ThoughtDef Ant_AteBirdMeatDirect;
         public static ThoughtDef Ant_BirdLeatherApparel;
         public static ThoughtDef Ant_BirdLoverSawBird;
         public static ThoughtDef Ant_AteBirdMeatAsIngredient;
+
+        public static HediffDef Ant_Aberration;
     }
     
 }

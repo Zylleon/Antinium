@@ -29,51 +29,18 @@ namespace AntiniumRaceCode
             // patch the targetmethod, by calling prefixmethod before it runs, with no postfixmethod (i.e. null)
             harmony.Patch(targetmethod, prefixmethod, null);
 
+
+            // Bird lover eats bird
             targetmethod = AccessTools.Method(typeof(RimWorld.FoodUtility), "AddIngestThoughtsFromIngredient");
             prefixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("AddIngestThoughtsFromIngredient_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
-        }
 
 
-        
+            // Aberration
+            targetmethod = AccessTools.Method(typeof(Verse.AI.MentalBreaker), "TryDoRandomMoodCausedMentalBreak");
+            HarmonyMethod postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("MentalBreak_Abberation_Postfix"));
+            harmony.Patch(targetmethod, null, postfixmethod);
 
-        
-        public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
-        {
-            if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
-            {
-                if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
-                {
-                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);                // TODO: figure out how to identify my new thought so it can be added
-
-
-                }
-
-            }
-            
-
-            //if (ingester.story.traits.allTraits.Any(tr => tr.def.defName == "Ant_BirdLover"))
-            //{
-            //    if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
-            //    {
-            //        ingestThoughts.Add(ThoughtDefOf.Ant_AteBirdMeatAsIngredient);                // TODO: figure out how to identify my new thought so it can be added
-
-                    
-            //    }
-
-            //}
-
-
-
-            //if (ingester.RaceProps.Humanlike && FoodUtility.IsHumanlikeMeat(ingredient))
-            //{
-            //    ingestThoughts.Add((!ingester.story.traits.HasTrait(TraitDefOf.Cannibal)) ? ThoughtDefOf.AteHumanlikeMeatAsIngredient : ThoughtDefOf.AteHumanlikeMeatAsIngredientCannibal);
-            //}
-            //else if (ingredient.ingestible.specialThoughtAsIngredient != null)
-            //{
-            //    ingestThoughts.Add(ingredient.ingestible.specialThoughtAsIngredient);
-            //}
-            //
         }
 
 
@@ -87,6 +54,61 @@ namespace AntiniumRaceCode
             return true;
 
         }
+
+
+        public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
+        {
+            if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
+            {
+                if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
+                {
+                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);                
+
+                }
+
+            }
+        }
+
+
+
+        public static void MentalBreak_Abberation_Postfix(Verse.AI.MentalBreaker __instance, ref bool __result)
+        {
+            Log.Message("aberration method fired");
+            int intensity;
+            int.TryParse("" + (byte)Traverse.Create(__instance).Property("CurrentDesiredMoodBreakIntensity").GetValue<MentalBreakIntensity>(), out intensity);
+            Log.Message("Mental break had an intensity of " + intensity);
+            Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue<Pawn>();
+
+            //TODO: check if pawn is already abberation
+
+            if (pawn.kindDef.race.defName == "Ant_AntiniumRace" && __result && intensity >= 2)
+            {
+
+                Log.Message("it might be an aberration?");
+
+
+
+                //TODO: some (weighted?) randomness to see if the pawn becomes abberation
+
+                if (Rand.Chance(intensity * .06f - .1f))
+                {
+                    pawn.health.AddHediff(AntDefOf.Ant_Aberration);
+                }
+
+
+
+                // apply abberation
+                pawn.health.AddHediff(AntDefOf.Ant_Aberration);
+                //TODO: send letter
+                //Verse.AI.MentalBreakWorker.TrySendLetter(pawn, LetterAberration)
+
+
+            
+
+            }
+
+        }
+
 
 
     }

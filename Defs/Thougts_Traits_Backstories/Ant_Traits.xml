@@ -115,7 +115,7 @@
       <li>
         <label>ate bird meat</label>
         <description>I got to eat a bird!</description>
-        <baseMoodEffect>6</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
