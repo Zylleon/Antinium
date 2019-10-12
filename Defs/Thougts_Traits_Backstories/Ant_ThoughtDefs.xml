@@ -577,7 +577,7 @@
       <li>
         <label>colonist banished</label>
         <description>We just banished someone. I hope they'll make it, but I'm worried.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
+        <baseMoodEffect>-6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -594,7 +594,7 @@
       <li>
         <label>colonist banished to death</label>
         <description>We banished someone in such a way that there's almost no way they'll survive.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
+        <baseMoodEffect>-9</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

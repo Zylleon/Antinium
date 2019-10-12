@@ -55,14 +55,17 @@ namespace AntiniumRaceCode
             {
                 return false;
             }
-            List<Pawn> mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
+            List<Pawn> mapPawns = new List<Pawn>();
+            mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
 
-            List<Pawn> birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
+            List<Pawn> birdPawns = new List<Pawn>();
+            birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
 
             if (birdPawns.Count > 0)
             {
 
-                int birds = birdPawns.Count(c => c.Position.InHorDistOf(pawn.Position, radius));
+                int birds = 0;
+                birds = birdPawns.Count(c => c.Position.InHorDistOf(pawn.Position, radius));
 
                 if (birds > 0)
                 {
@@ -74,5 +77,7 @@ namespace AntiniumRaceCode
 
         }
     }
+
+
 
 }

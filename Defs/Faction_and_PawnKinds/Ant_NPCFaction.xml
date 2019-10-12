@@ -55,54 +55,66 @@
       </points>
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
-      <li>
-        <!-- Normal fights, ranged with melee mix-ins -->
+      <li> <!-- Normal fights, ranged with melee mix-ins -->
+        
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Ant_LightInfantry>5</Ant_LightInfantry>
-          <Ant_HeavyInfantry>5</Ant_HeavyInfantry>
-          <Ant_Infantry>10</Ant_Infantry>
-          <Ant_Hunter>10</Ant_Hunter>
-          <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Archer>5</Ant_Archer>
-          <Ant_ChiefRanged>3</Ant_ChiefRanged>
-          <Ant_ChiefMelee>1.5</Ant_ChiefMelee>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, ranged only -->
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <Ant_Infantry>10</Ant_Infantry>
-          <Ant_Hunter>10</Ant_Hunter>
-          <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_ChiefRanged>5</Ant_ChiefRanged>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, melee only -->
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <Ant_LightInfantry>10</Ant_LightInfantry>
-          <Ant_HeavyInfantry>10</Ant_HeavyInfantry>
+          <Ant_CannonFodder>20</Ant_CannonFodder> 
+          <Ant_Combatant>10</Ant_Combatant>
+		  <Ant_Soldier>5</Ant_Soldier>
           <Ant_Archer>10</Ant_Archer>
-          <Ant_ChiefMelee>5</Ant_ChiefMelee>
-      </options>
+          <Ant_SpecialArcher>5</Ant_SpecialArcher>
+          <Ant_Bowman>5</Ant_Bowman>
+          <Ant_ArmoredAntinium>3</Ant_ArmoredAntinium>
+          <Ant_Warrior>1.5</Ant_Warrior>
+        </options>
+      </li> 
+      <li> <!-- Normal fights, mostly ranged -->       
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+		  <Ant_CannonFodder>15</Ant_CannonFodder>
+          <Ant_Bowman>10</Ant_Bowman>
+          <Ant_Archer>10</Ant_Archer>
+          <Ant_SpecialArcher>10</Ant_SpecialArcher>
+        </options>
       </li>
-      <li>
+      <li> <!-- Normal fights, melee only -->     
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Ant_CannonFodder>20</Ant_CannonFodder>
+		  <Ant_Combatant>10</Ant_Combatant>
+          <Ant_Soldier>10</Ant_Soldier>
+          <Ant_ArmoredAntinium>5</Ant_ArmoredAntinium>
+        </options>
+	  </li>
+		
+	  <li> <!-- Normal fights, swarm -->     
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Ant_CannonFodder>30</Ant_CannonFodder>
+		  <Ant_Combatant>20</Ant_Combatant>
+          <Ant_Bowman>10</Ant_Bowman>
+          <Ant_Soldier>5</Ant_Soldier>
+        </options>
+      </li>
+	  
+	  
+    <!-- Peaceful -->
+	 <li>
         <!-- Peaceful -->
         <kindDef>Peaceful</kindDef>
         <options>
-          <Ant_HeavyInfantry>20</Ant_HeavyInfantry>
-          <Ant_Infantry>10</Ant_Infantry>
-          <Ant_Hunter>10</Ant_Hunter>
-          <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Archer>5</Ant_Archer>
-          <Ant_ChiefRanged>3</Ant_ChiefRanged>
-          <Ant_ChiefMelee>1.5</Ant_ChiefMelee>
+          <Ant_Soldier>20</Ant_Soldier>
+          <Ant_Combatant>10</Ant_Combatant>
+          <Ant_Archer>10</Ant_Archer>
+          <Ant_SpecialArcher>10</Ant_SpecialArcher>
+          <Ant_Bowman>5</Ant_Bowman>
+          <Ant_ArmoredAntinium>3</Ant_ArmoredAntinium>
+          <Ant_Warrior>1.5</Ant_Warrior>
         </options>
       </li>
       <li>
@@ -117,22 +129,22 @@
           <Elephant>2</Elephant>
         </carriers>
         <guards>
-          <Ant_HeavyInfantry>7</Ant_HeavyInfantry>
-          <Ant_Infantry>10</Ant_Infantry>
-          <Ant_Hunter>10</Ant_Hunter>
-          <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Archer>7</Ant_Archer>
+          <Ant_Soldier>7</Ant_Soldier>
+          <Ant_Combatant>10</Ant_Combatant>
+          <Ant_Archer>10</Ant_Archer>
+          <Ant_SpecialArcher>10</Ant_SpecialArcher>
+          <Ant_Bowman>7</Ant_Bowman>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Ant_HeavyInfantry>7</Ant_HeavyInfantry>
-          <Ant_Infantry>10</Ant_Infantry>
-          <Ant_Hunter>10</Ant_Hunter>
-          <Ant_HeavyArcher>10</Ant_HeavyArcher>
-          <Ant_Archer>7</Ant_Archer>
-          <Ant_ChiefRanged>10</Ant_ChiefRanged>
+          <Ant_Soldier>7</Ant_Soldier>
+          <Ant_Combatant>10</Ant_Combatant>
+          <Ant_Archer>10</Ant_Archer>
+          <Ant_SpecialArcher>10</Ant_SpecialArcher>
+          <Ant_Bowman>7</Ant_Bowman>
+          <Ant_ArmoredAntinium>10</Ant_ArmoredAntinium>
         </options>
       </li>
     </pawnGroupMakers>

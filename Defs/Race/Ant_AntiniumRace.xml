@@ -35,13 +35,14 @@
 	  <SocialImpact>1.1</SocialImpact>
 	  
 	<!--combat & health-->
-	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 	  <MeleeDodgeChance>10</MeleeDodgeChance>
-	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+	  <MeleeHitChance>5</MeleeHitChance>
 	  <AimingDelayFactor>1.3</AimingDelayFactor>
 	  <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
-
+	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+	  
 	 <!--TODO: Leather/meat amount -->
     </statBases>
 	
@@ -427,9 +428,8 @@
       <leatherDef>Ant_AntiniumLeather</leatherDef>
 	  <meatColor>(160,168,139)</meatColor>
 	  <bloodDef>Filth_BloodInsect</bloodDef>
-	  
-	  <foodType>OmnivoreRoughAnimal</foodType>
-	  <!-- <foodType>OmnivoreHuman</foodType> -->
+
+	  <foodType>OmnivoreHuman</foodType>
 	  
       <nameCategory>HumanStandard</nameCategory>
       <body>Antinium</body>

@@ -79,31 +79,19 @@ namespace AntiniumRaceCode
             Log.Message("Mental break had an intensity of " + intensity);
             Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue<Pawn>();
 
-            //TODO: check if pawn is already abberation
 
             if (pawn.kindDef.race.defName == "Ant_AntiniumRace" && __result && intensity >= 2)
             {
 
-                Log.Message("it might be an aberration?");
-
-
-
-                //TODO: some (weighted?) randomness to see if the pawn becomes abberation
+               // Log.Message("it might be an aberration?");
 
                 if (Rand.Chance(intensity * .06f - .1f))
                 {
                     pawn.health.AddHediff(AntDefOf.Ant_Aberration);
+                    Find.LetterStack.ReceiveLetter("LetterLabelAberration".Translate(pawn), "LetterAberration".Translate(pawn), LetterDefOf.NegativeEvent);
+
                 }
-
-
-
-                // apply abberation
-                pawn.health.AddHediff(AntDefOf.Ant_Aberration);
-                //TODO: send letter
-                //Verse.AI.MentalBreakWorker.TrySendLetter(pawn, LetterAberration)
-
-
-            
+                //pawn.health.AddHediff(AntDefOf.Ant_Aberration);
 
             }
 

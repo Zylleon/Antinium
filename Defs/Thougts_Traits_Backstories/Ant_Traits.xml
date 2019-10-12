@@ -21,22 +21,22 @@
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>bird leather {0}</label>
+        <label>birdskin {0}</label>
         <description>I'm wearing a bird</description>
         <baseMoodEffect>1</baseMoodEffect>
       </li>
 			<li>
-				<label>bird leather {0} (+1)</label>
+				<label>birdskin {0} (+1)</label>
 				<description>I'm wearing birds!</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 			<li>
-				<label>bird leather {0} (+2)</label>
+				<label>birdskin {0} (+2)</label>
 				<description>I'm wearing lots of birds!</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 			<li>
-				<label>bird leather {0} etc</label>
+				<label>birdskin {0} etc</label>
 				<description>I'm wearing every bird! I'm covered in birds!</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
@@ -60,22 +60,22 @@
         <baseMoodEffect>2</baseMoodEffect>
       </li>
 	   <li>
-        <label>saw bird</label>
+        <label>saw bird (x2)</label>
         <description>I saw a bird!</description>
         <baseMoodEffect>4</baseMoodEffect>
       </li>
 	  <li>
-        <label>saw birds</label>
+        <label>saw birds (x3)</label>
         <description>I saw birds!</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
 	  <li>
-        <label>saw birds</label>
+        <label>saw birds (x4)</label>
         <description>I saw birds!</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
 	  <li>
-        <label>saw birds</label>
+        <label>saw birds (5+)</label>
         <description>I saw lots of birds!</description>
         <baseMoodEffect>8</baseMoodEffect>
       </li>

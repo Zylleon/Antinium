@@ -29,8 +29,16 @@
             <mtbDays>.5</mtbDays>
           </li>
 		  <li>
+            <mentalState>MurderousRage</mentalState>
+            <mtbDays>1.5</mtbDays>
+          </li>
+		  <li>
             <mentalState>WanderConfused</mentalState>
             <mtbDays>1.1</mtbDays>
+          </li>
+		  <li>
+            <mentalState>TargetedTantrum</mentalState>
+            <mtbDays>2</mtbDays>
           </li>
         </mentalStateGivers>
 		</li>
