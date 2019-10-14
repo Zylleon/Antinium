@@ -51,13 +51,15 @@ namespace AntiniumRaceCode
             {
                 return false;
             }
-            if (!pawn.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
+
+            TraitDef birdLover = DefDatabase<TraitDef>.GetNamed("Ant_BirdLover");
+            if (!pawn.story.traits.HasTrait(birdLover))
             {
                 return false;
             }
+
             List<Pawn> mapPawns = new List<Pawn>();
             mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
-
             int count = mapPawns.Count();
 
             List<Pawn> birdPawns = new List<Pawn>();

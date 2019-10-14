@@ -58,15 +58,17 @@ namespace AntiniumRaceCode
 
         public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
         {
-            if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
+            TraitDef birdLover = DefDatabase<TraitDef>.GetNamed("Ant_BirdLover");
+
+            if (ingester.story.traits.HasTrait(birdLover))
             {
                 //if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
                 if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" )
                 {
-                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);
-
+                    ThoughtDef ateBird = DefDatabase<ThoughtDef>.GetNamed("Ant_AteBirdMeatAsIngredient");
+                    ingestThoughts.Add(ateBird);
+                    //ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);
                 }
-
             }
         }
 
@@ -82,19 +84,14 @@ namespace AntiniumRaceCode
 
             if (pawn.kindDef.race.defName == "Ant_AntiniumRace" && __result && intensity >= 2)
             {
-
                // Log.Message("it might be an aberration?");
-
                 if (Rand.Chance(intensity * .06f - .1f))
                 {
                     pawn.health.AddHediff(AntDefOf.Ant_Aberration);
                     Find.LetterStack.ReceiveLetter("LetterLabelAberration".Translate(pawn), "LetterAberration".Translate(pawn), LetterDefOf.NegativeEvent);
-
                 }
                 //pawn.health.AddHediff(AntDefOf.Ant_Aberration);
-
             }
-
         }
 
 
