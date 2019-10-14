@@ -60,9 +60,10 @@ namespace AntiniumRaceCode
         {
             if (ingester.story.traits.HasTrait(AntDefOf.Ant_BirdLover))
             {
-                if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
+                //if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
+                if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" )
                 {
-                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);                
+                    ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);
 
                 }
 
@@ -73,12 +74,11 @@ namespace AntiniumRaceCode
 
         public static void MentalBreak_Abberation_Postfix(Verse.AI.MentalBreaker __instance, ref bool __result)
         {
-            Log.Message("aberration method fired");
+           // Log.Message("aberration method fired");
             int intensity;
             int.TryParse("" + (byte)Traverse.Create(__instance).Property("CurrentDesiredMoodBreakIntensity").GetValue<MentalBreakIntensity>(), out intensity);
-            Log.Message("Mental break had an intensity of " + intensity);
+           // Log.Message("Mental break had an intensity of " + intensity);
             Pawn pawn = Traverse.Create(__instance).Field("pawn").GetValue<Pawn>();
-
 
             if (pawn.kindDef.race.defName == "Ant_AntiniumRace" && __result && intensity >= 2)
             {

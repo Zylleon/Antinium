@@ -58,8 +58,12 @@ namespace AntiniumRaceCode
             List<Pawn> mapPawns = new List<Pawn>();
             mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
 
+            int count = mapPawns.Count();
+
             List<Pawn> birdPawns = new List<Pawn>();
-            birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
+
+            //birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
+            birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird").ToList();
 
             if (birdPawns.Count > 0)
             {
@@ -69,9 +73,12 @@ namespace AntiniumRaceCode
 
                 if (birds > 0)
                 {
+
                     return ThoughtState.ActiveAtStage(Math.Min(birds - 1, 4));
                 }
             }
+
+            //Log.Message("NO BIRDS on map");
 
             return false;
 

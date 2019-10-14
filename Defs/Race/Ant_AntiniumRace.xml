@@ -20,6 +20,7 @@
 	  <ButcheryFleshEfficiency>.85</ButcheryFleshEfficiency>
 	  <HuntingStealth>1.1</HuntingStealth>
 	<!--labor-->
+	  <CarryingCapacity>90</CarryingCapacity>
 	  <MiningSpeed>1.15</MiningSpeed>
 	  <MiningYield>1.15</MiningYield>
 	  <UnskilledLaborSpeed>1.15</UnskilledLaborSpeed>
@@ -57,7 +58,7 @@
 		    </validBeds>
 			<maxDamageForSocialfight>6</maxDamageForSocialfight>
 			<humanRecipeImport>true</humanRecipeImport>
-			<maleGenderProbability>0.95</maleGenderProbability>
+			<maleGenderProbability>1</maleGenderProbability>
 			<alienPartGenerator>
 				<aliencrowntypes>
 				<li>Average_Normal</li>
@@ -167,7 +168,9 @@
 		
 		</generalSettings>
         <graphicPaths>
-			<li><head>Antinium/Head/</head></li>
+			<li>
+				<head>Antinium/Head/</head>
+			</li>
         </graphicPaths>
         <hairSettings>
 			<hasHair>false</hasHair>
@@ -322,7 +325,9 @@
 
         </relationSettings>
         <raceRestriction>
-
+			<traitList>
+                <li>Ant_BirdLover</li>
+            </traitList>
         </raceRestriction>
     </alienRace>
 	<tools>
