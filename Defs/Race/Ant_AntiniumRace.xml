@@ -190,15 +190,8 @@
                     <original>AteCorpse</original>
                     <replacer>Ant_AteCorpse</replacer> 
                 </li>
-				<li>
-                    <original>AteInsectMeatDirect</original>
-                    <replacer>Ant_AteInsectMeatDirect</replacer> 
-                </li>
-				<li>
-                    <original>AteInsectMeatAsIngredient</original>
-                    <replacer>Ant_AteInsectMeatAsIngredient</replacer> 
-                </li>
-				<li>
+				<!--AteInsectMeatDirect-->	
+				<!--AteInsectMeatAsIngredient-->	
                     <original>AteRottenFood</original>
                     <replacer>Ant_AteRottenFood</replacer> 
                 </li>

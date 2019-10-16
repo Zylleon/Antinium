@@ -29,16 +29,19 @@ namespace AntiniumRaceCode
             // patch the targetmethod, by calling prefixmethod before it runs, with no postfixmethod (i.e. null)
             harmony.Patch(targetmethod, prefixmethod, null);
 
-
             // Bird lover eats bird
             targetmethod = AccessTools.Method(typeof(RimWorld.FoodUtility), "AddIngestThoughtsFromIngredient");
             prefixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("AddIngestThoughtsFromIngredient_Prefix"));
             harmony.Patch(targetmethod, prefixmethod, null);
 
+            // Ant eats insect meat
+            targetmethod = AccessTools.Method(typeof(RimWorld.FoodUtility), "ThoughtsFromIngesting");
+            HarmonyMethod postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("ThoughtsFromIngesting_Postfix"));
+            harmony.Patch(targetmethod, null, postfixmethod);
 
             // Aberration
             targetmethod = AccessTools.Method(typeof(Verse.AI.MentalBreaker), "TryDoRandomMoodCausedMentalBreak");
-            HarmonyMethod postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("MentalBreak_Abberation_Postfix"));
+            postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("MentalBreak_Abberation_Postfix"));
             harmony.Patch(targetmethod, null, postfixmethod);
 
         }
@@ -52,7 +55,6 @@ namespace AntiniumRaceCode
                 return false;
             }
             return true;
-
         }
 
 
@@ -72,6 +74,41 @@ namespace AntiniumRaceCode
             }
         }
 
+
+        // to fix insect meat food priority
+        public static void ThoughtsFromIngesting_Postfix(Pawn ingester, ref List<ThoughtDef> __result)
+        {
+
+            if (ingester.kindDef.race.defName == "Ant_AntiniumRace" )
+            {
+                Log.Message("An ant is eating");
+
+                // AteInsectMeatAsIngredient
+                if (__result.Contains(ThoughtDefOf.AteInsectMeatAsIngredient))
+                {
+                    Log.Message("ant ate insect meat ingredient");
+
+                    __result.Remove(ThoughtDefOf.AteInsectMeatAsIngredient);
+                    ThoughtDef ateInsectIngredient = DefDatabase<ThoughtDef>.GetNamed("Ant_AteInsectMeatAsIngredient");
+                    __result.Add(ateInsectIngredient);
+                }
+
+                // AteInsectMeatDirect
+                else if (__result.Contains(ThoughtDefOf.AteInsectMeatDirect))
+                {
+                    Log.Message("ant ate insect meat direct");
+
+                    __result.Remove(ThoughtDefOf.AteInsectMeatDirect);
+                    ThoughtDef ateInsectDirect = DefDatabase<ThoughtDef>.GetNamed("Ant_AteInsectMeatDirect");
+                    __result.Add(ateInsectDirect);
+                }
+            }
+            else
+            {
+                Log.Message("A human is eating");
+            }
+
+        }
 
 
         public static void MentalBreak_Abberation_Postfix(Verse.AI.MentalBreaker __instance, ref bool __result)
