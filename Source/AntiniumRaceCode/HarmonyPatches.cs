@@ -81,13 +81,9 @@ namespace AntiniumRaceCode
 
             if (ingester.kindDef.race.defName == "Ant_AntiniumRace" )
             {
-                Log.Message("An ant is eating");
-
                 // AteInsectMeatAsIngredient
                 if (__result.Contains(ThoughtDefOf.AteInsectMeatAsIngredient))
                 {
-                    Log.Message("ant ate insect meat ingredient");
-
                     __result.Remove(ThoughtDefOf.AteInsectMeatAsIngredient);
                     ThoughtDef ateInsectIngredient = DefDatabase<ThoughtDef>.GetNamed("Ant_AteInsectMeatAsIngredient");
                     __result.Add(ateInsectIngredient);
@@ -96,16 +92,10 @@ namespace AntiniumRaceCode
                 // AteInsectMeatDirect
                 else if (__result.Contains(ThoughtDefOf.AteInsectMeatDirect))
                 {
-                    Log.Message("ant ate insect meat direct");
-
                     __result.Remove(ThoughtDefOf.AteInsectMeatDirect);
                     ThoughtDef ateInsectDirect = DefDatabase<ThoughtDef>.GetNamed("Ant_AteInsectMeatDirect");
                     __result.Add(ateInsectDirect);
                 }
-            }
-            else
-            {
-                Log.Message("A human is eating");
             }
 
         }
@@ -127,7 +117,6 @@ namespace AntiniumRaceCode
                     pawn.health.AddHediff(AntDefOf.Ant_Aberration);
                     Find.LetterStack.ReceiveLetter("LetterLabelAberration".Translate(pawn), "LetterAberration".Translate(pawn), LetterDefOf.NegativeEvent);
                 }
-                //pawn.health.AddHediff(AntDefOf.Ant_Aberration);
             }
         }
 

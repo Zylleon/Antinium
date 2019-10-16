@@ -190,11 +190,12 @@
                     <original>AteCorpse</original>
                     <replacer>Ant_AteCorpse</replacer> 
                 </li>
-				<!--AteInsectMeatDirect-->	
-				<!--AteInsectMeatAsIngredient-->	
+				<li>
                     <original>AteRottenFood</original>
                     <replacer>Ant_AteRottenFood</replacer> 
                 </li>
+				<!--AteInsectMeatDirect-->	
+				<!--AteInsectMeatAsIngredient-->	
 		<!--outdoors and room size-->		
 				<li>
                     <original>NeedRoomSize</original>
