@@ -4,12 +4,16 @@
   <author>Zylle</author>
   <supportedVersions><li>1.0</li></supportedVersions>
   <description>
-    Adds a new playable race based on the Antinium from the Wandering Inn web serial.
-	
-	Antinium are a hive species that resembles giant ants. This is a difficult, low-tech start. 
-	
-	Antinium are good at melee, and have a lot of natural armor. They're also good at mining, construction, and butchery. They're bad at ranged combat, farming, animal taming, and cooking - Antinium can safely eat raw or rotten food, so their cooks don't always know what isn't safe for other species to eat (lots of food poisoning if an Antinium cook is feeding a non-Antinium colony). 
-	
-	Antinium like eating insect meat and are less bothered by cannibalism or mistreating prisoners, but more bothered if someone close to them dies. They really hate being wet. Antinium have many other preferences that may seem strange to humans; it may be difficult to integrate outsiders into an established hive.
+Adds a new playable race based on the Antinium from the Wandering Inn web serial.
+
+Antinium are a hive species that resembles giant ants. This is a difficult, low-tech start. 
+
+Antinium are good at melee and are protected by some natural armor. They're also good at mining, construction, and butchery. They're bad at ranged combat, farming, animal taming, and cooking - Antinium can safely eat raw or rotten food, so their cooks don't always know what isn't safe for other species to eat (lots of food poisoning if an Antinium cook is feeding a non-Antinium colony). 
+
+Antinium like eating insect meat and are less bothered by cannibalism or mistreating prisoners, but more bothered if someone close to them dies. They really hate being wet. Antinium have many other preferences that may seem strange to humans; it may be difficult to integrate outsiders into an established hive.
+
+Requires Humanoid Alien Races: https://steamcommunity.com/workshop/filedetails/?id=839005762
+
+Highly recommend using Melee Hunting: https://steamcommunity.com/sharedfiles/filedetails/?id=832151070
   </description>
 </ModMetaData>
