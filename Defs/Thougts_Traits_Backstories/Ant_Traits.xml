@@ -3,13 +3,16 @@
 
   <TraitDef>
     <defName>Ant_BirdLover</defName>
-    <commonality>0.6</commonality>
+    <commonality>1.5</commonality>
     <degreeDatas>
       <li>
         <label>bird lover</label>
         <description>{PAWN_nameDef} loves birds.</description>
       </li>
     </degreeDatas>
+	<conflictingTraits>
+      <li>Cannibal</li>
+    </conflictingTraits>
   </TraitDef>
   
   <!--thoughts-->
@@ -98,7 +101,7 @@
       <li>
         <label>ate bird meat</label>
         <description>I got to eat a bird!</description>
-        <baseMoodEffect>6</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -115,7 +118,7 @@
       <li>
         <label>ate bird meat</label>
         <description>I got to eat a bird!</description>
-        <baseMoodEffect>3</baseMoodEffect>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

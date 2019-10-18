@@ -5,8 +5,8 @@
     <label>Antinium</label>
     <description>This is an ant person</description>
 	<statBases>
-      <MarketValue>700</MarketValue>
-	  <MoveSpeed>4.7</MoveSpeed>
+      <MarketValue>900</MarketValue>
+	  <MoveSpeed>4.8</MoveSpeed>
 	  
 	  <PsychicSensitivity>1.07</PsychicSensitivity>
 	  <ToxicSensitivity>.8</ToxicSensitivity>
@@ -29,7 +29,7 @@
 	  <ConstructSuccessChance>1.15</ConstructSuccessChance>
 	<!--plants-->
 	  <PlantWorkSpeed>.9</PlantWorkSpeed>
-	  <PlantHarvestYield>.85</PlantHarvestYield>
+	  <PlantHarvestYield>.9</PlantHarvestYield>
 	<!--social-->
 	  <NegotiationAbility>.8</NegotiationAbility>
 	  <TradePriceImprovement>.8</TradePriceImprovement>
@@ -37,7 +37,7 @@
 	  
 	<!--combat & health-->
 	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 	  <MeleeDodgeChance>10</MeleeDodgeChance>
 	  <MeleeHitChance>5</MeleeHitChance>
 	  <AimingDelayFactor>1.3</AimingDelayFactor>
@@ -45,6 +45,7 @@
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  
 	 <!--TODO: Leather/meat amount -->
+	  <LeatherAmount>45</LeatherAmount>
     </statBases>
 	
 
@@ -424,7 +425,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
 	  
-      <leatherDef>Ant_AntiniumLeather</leatherDef>
+      <leatherDef>Ant_AntiniumChitin</leatherDef>
 	  <meatColor>(160,168,139)</meatColor>
 	  <bloodDef>Filth_BloodInsect</bloodDef>
 

@@ -94,6 +94,9 @@
         <li>
             <defName>Kind</defName>
         </li>
+		<li>
+            <defName>Wimp</defName>
+        </li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -305,6 +308,11 @@
             <chance>20</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -435,9 +443,14 @@
 	<forcedTraits>
         <li>
             <defName>Tough</defName>
-            <chance>25</chance>
+            <chance>30</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>

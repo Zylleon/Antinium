@@ -35,7 +35,10 @@
         <li>Cloth</li>
       </thingDefs>
     </apparelStuffFilter>
-
+	<!--to try to add tribalwear-->
+	<recipePrerequisiteTags>
+      <li>AntTag</li>
+    </recipePrerequisiteTags>
   </FactionDef>
   
 

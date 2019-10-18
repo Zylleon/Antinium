@@ -2,9 +2,9 @@
 <Defs>
 
 <ThingDef ParentName="LeatherBase">
-    <defName>Ant_AntiniumLeather</defName>
-    <label>antinium leather</label>
-    <description>Antinium leather. It's dark brown.</description>
+    <defName>Ant_AntiniumChitin</defName>
+    <label>antinium chitin</label>
+    <description>Antinium chitin. Protects reasonably well, but most people are uncomfortable wearing it.</description>
     <graphicData>
       <color>(87,35,16)</color>
     </graphicData>
