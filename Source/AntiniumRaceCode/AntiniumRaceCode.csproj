@@ -51,9 +51,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AntDefOf.cs" />
+    <Compile Include="Building_RxlvnFermentingBarrel.cs" />
+    <Compile Include="JobDriver_FillRxlvnFermentingBarrel.cs" />
+    <Compile Include="JobDriver_TakeRxlvnOutOfFermentingBarrel.cs" />
     <Compile Include="ThoughtWorker_BirdLover.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkGiver_FillRxlvnFermentingBarrel.cs" />
+    <Compile Include="WorkGiver_TakeRxlvnOutOfFermentingBarrel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

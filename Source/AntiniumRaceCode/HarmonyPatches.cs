@@ -44,6 +44,11 @@ namespace AntiniumRaceCode
             postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("MentalBreak_Abberation_Postfix"));
             harmony.Patch(targetmethod, null, postfixmethod);
 
+            // Drug tolerance
+            targetmethod = AccessTools.Method(typeof(RimWorld.AddictionUtility), "ModifyChemicalEffectForToleranceAndBodySize");
+            postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("ModifyChemicalEffectForToleranceAndBodySize_Postfix"));
+            harmony.Patch(targetmethod, null, postfixmethod);
+
         }
 
 
@@ -120,6 +125,19 @@ namespace AntiniumRaceCode
             }
         }
 
+
+        // drug resistance
+        public static void ModifyChemicalEffectForToleranceAndBodySize_Postfix(Pawn pawn, ChemicalDef chemicalDef, ref float effect)
+        {
+            if (chemicalDef != null)
+            {
+                if (pawn.kindDef.race.defName == "Ant_AntiniumRace" && chemicalDef.defName != "Luciferium")
+                {
+                    effect *= .6f;
+                }
+
+            }
+        }
 
 
     }

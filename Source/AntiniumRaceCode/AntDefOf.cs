@@ -22,6 +22,9 @@ namespace AntiniumRaceCode
         public static ThoughtDef Ant_AteInsectMeatAsIngredient;
 
         public static HediffDef Ant_Aberration;
+
+        public static ThingDef Ant_RxlvnFermentingBarrel;
+        public static ThingDef Ant_RxlvnMash;
     }
     
 }

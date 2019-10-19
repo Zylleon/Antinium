@@ -44,7 +44,6 @@
 	  <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
 	  <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	  
-	 <!--TODO: Leather/meat amount -->
 	  <LeatherAmount>45</LeatherAmount>
     </statBases>
 	
@@ -139,23 +138,9 @@
                 </options>
 				</alienskincolorgen>
 			</alienPartGenerator>
-	<!--TODO: make resistant to alcohol, possibly resistant to other drugs -->		
+
 			<chemicalSettings>
-				<li>
-                    <chemical>Beer</chemical>
-                    <reactions>
-                        <li Class="IngestionOutcomeDoer_GiveHediff">
-                            <hediffDef>AlcoholHigh</hediffDef>
-                            <severity>0.5</severity>
-							<toleranceChemical>Alcohol</toleranceChemical>
-                        </li>
-						<li Class="IngestionOutcomeDoer_GiveHediff">
-							<hediffDef>AlcoholTolerance</hediffDef>
-							<severity>0.5</severity>
-							<divideByBodySize>true</divideByBodySize>
-						</li>
-                    </reactions>
-                </li>
+
             </chemicalSettings>
 	<!--TODO: forced traits? Possibly by gender -->
 			<disallowedTraits>
@@ -323,6 +308,21 @@
 			<traitList>
                 <li>Ant_BirdLover</li>
             </traitList>
+			
+			<researchList>
+                <li>
+                    <projects>
+                        <li>Ant_Brewing</li>
+                    </projects>
+                </li>
+            </researchList>
+			
+			<recipeList>
+                <li>Ant_Rxlvn</li>
+            </recipeList>
+			
+			<!--<buildingList> <li>Ant_RxlvnFermentingBarrel</li> </buildingList>-->
+			
         </raceRestriction>
     </alienRace>
 	<tools>
