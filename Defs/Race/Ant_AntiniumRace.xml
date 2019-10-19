@@ -318,11 +318,9 @@
             </researchList>
 			
 			<recipeList>
-                <li>Ant_Rxlvn</li>
+                <li>Ant_RxlvnMash</li>
             </recipeList>
-			
 			<!--<buildingList> <li>Ant_RxlvnFermentingBarrel</li> </buildingList>-->
-			
         </raceRestriction>
     </alienRace>
 	<tools>

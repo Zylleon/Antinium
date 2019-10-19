@@ -15,7 +15,7 @@ namespace AntiniumRaceCode
         {
             get
             {
-                return ThingRequest.ForDef(ThingDefOf.FermentingBarrel);
+                return ThingRequest.ForDef(AntDefOf.Ant_RxlvnFermentingBarrel);
             }
         }
 
@@ -51,7 +51,7 @@ namespace AntiniumRaceCode
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return new Job(JobDefOf.TakeBeerOutOfFermentingBarrel, t);
+            return new Job(AntDefOf.TakeRxlvnOutOfFermentingBarrel, t);
         }
     }
 }

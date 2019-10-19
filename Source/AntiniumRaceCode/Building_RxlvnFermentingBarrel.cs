@@ -13,7 +13,7 @@ namespace AntiniumRaceCode
     [StaticConstructorOnStartup]
     public class Building_RxlvnFermentingBarrel : Building
     {
-        private int wortCount;
+        private int mashCount;
 
         private float progressInt;
 
@@ -62,7 +62,7 @@ namespace AntiniumRaceCode
             }
         }
 
-        public int SpaceLeftForWort
+        public int SpaceLeftForMash
         {
             get
             {
@@ -70,7 +70,7 @@ namespace AntiniumRaceCode
                 {
                     return 0;
                 }
-                return 25 - this.wortCount;
+                return 25 - this.mashCount;
             }
         }
 
@@ -78,7 +78,7 @@ namespace AntiniumRaceCode
         {
             get
             {
-                return this.wortCount <= 0;
+                return this.mashCount <= 0;
             }
         }
 
@@ -127,7 +127,7 @@ namespace AntiniumRaceCode
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<int>(ref this.wortCount, "wortCount", 0, false);
+            Scribe_Values.Look<int>(ref this.mashCount, "mashCount", 0, false);
             Scribe_Values.Look<float>(ref this.progressInt, "progress", 0f, false);
         }
 
@@ -140,21 +140,21 @@ namespace AntiniumRaceCode
             }
         }
 
-        public void AddWort(int count)
+        public void AddMash(int count)
         {
             base.GetComp<CompTemperatureRuinable>().Reset();
             if (this.Fermented)
             {
-                Log.Warning("Tried to add wort to a barrel full of beer. Colonists should take the beer first.", false);
+                Log.Warning("Tried to add mash to a barrel full of rxlvn. Colonists should take the rxlvn first.", false);
                 return;
             }
-            int num = Mathf.Min(count, 25 - this.wortCount);
+            int num = Mathf.Min(count, 25 - this.mashCount);
             if (num <= 0)
             {
                 return;
             }
-            this.Progress = GenMath.WeightedAverage(0f, (float)num, this.Progress, (float)this.wortCount);
-            this.wortCount += num;
+            this.Progress = GenMath.WeightedAverage(0f, (float)num, this.Progress, (float)this.mashCount);
+            this.mashCount += num;
         }
 
         protected override void ReceiveCompSignal(string signal)
@@ -167,17 +167,17 @@ namespace AntiniumRaceCode
 
         private void Reset()
         {
-            this.wortCount = 0;
+            this.mashCount = 0;
             this.Progress = 0f;
         }
 
-        public void AddWort(Thing wort)
+        public void AddMash(Thing mash)
         {
-            int num = Mathf.Min(wort.stackCount, 25 - this.wortCount);
+            int num = Mathf.Min(mash.stackCount, 25 - this.mashCount);
             if (num > 0)
             {
-                this.AddWort(num);
-                wort.SplitOff(num).Destroy(DestroyMode.Vanish);
+                this.AddMash(num);
+                mash.SplitOff(num).Destroy(DestroyMode.Vanish);
             }
         }
 
@@ -194,11 +194,11 @@ namespace AntiniumRaceCode
             {
                 if (this.Fermented)
                 {
-                    stringBuilder.AppendLine("ContainsBeer".Translate(this.wortCount, 25));
+                    stringBuilder.AppendLine("ContainsRxlvn".Translate(this.mashCount, 25));
                 }
                 else
                 {
-                    stringBuilder.AppendLine("ContainsWort".Translate(this.wortCount, 25));
+                    stringBuilder.AppendLine("ContainsMash".Translate(this.mashCount, 25));
                 }
             }
             if (!this.Empty)
@@ -228,15 +228,15 @@ namespace AntiniumRaceCode
             return stringBuilder.ToString().TrimEndNewlines();
         }
 
-        public Thing TakeOutBeer()
+        public Thing TakeOutRxlvn()
         {
             if (!this.Fermented)
             {
-                Log.Warning("Tried to get beer but it's not yet fermented.", false);
+                Log.Warning("Tried to get rxlvn but it's not yet fermented.", false);
                 return null;
             }
-            Thing thing = ThingMaker.MakeThing(ThingDefOf.Beer, null);
-            thing.stackCount = this.wortCount;
+            Thing thing = ThingMaker.MakeThing(AntDefOf.Ant_Rxlvn, null);
+            thing.stackCount = this.mashCount;
             this.Reset();
             return thing;
         }
@@ -253,7 +253,7 @@ namespace AntiniumRaceCode
                 {
                     center = drawPos,
                     size = Building_RxlvnFermentingBarrel.BarSize,
-                    fillPercent = (float)this.wortCount / 25f,
+                    fillPercent = (float)this.mashCount / 25f,
                     filledMat = this.BarFilledMat,
                     unfilledMat = Building_RxlvnFermentingBarrel.BarUnfilledMat,
                     margin = 0.1f,

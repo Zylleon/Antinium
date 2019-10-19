@@ -18,7 +18,7 @@ namespace AntiniumRaceCode
         {
             get
             {
-                return ThingRequest.ForDef(ThingDefOf.FermentingBarrel);
+                return ThingRequest.ForDef(AntDefOf.Ant_RxlvnFermentingBarrel);
             }
         }
 
@@ -39,7 +39,7 @@ namespace AntiniumRaceCode
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             Building_RxlvnFermentingBarrel building_RxlvnBarrel = t as Building_RxlvnFermentingBarrel;
-            if (building_RxlvnBarrel == null || building_RxlvnBarrel.Fermented || building_RxlvnBarrel.SpaceLeftForWort <= 0)
+            if (building_RxlvnBarrel == null || building_RxlvnBarrel.Fermented || building_RxlvnBarrel.SpaceLeftForMash <= 0)
             {
                 return false;
             }
@@ -74,7 +74,7 @@ namespace AntiniumRaceCode
         {
             Building_RxlvnFermentingBarrel barrel = (Building_RxlvnFermentingBarrel)t;
             Thing t2 = this.FindWort(pawn, barrel);
-            return new Job(JobDefOf.FillFermentingBarrel, t, t2);
+            return new Job(AntDefOf.FillRxlvnFermentingBarrel, t, t2);
         }
 
         private Thing FindWort(Pawn pawn, Building_RxlvnFermentingBarrel barrel)
@@ -82,7 +82,7 @@ namespace AntiniumRaceCode
             Predicate<Thing> predicate = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false);
             IntVec3 position = pawn.Position;
             Map map = pawn.Map;
-            ThingRequest thingReq = ThingRequest.ForDef(ThingDefOf.Wort);
+            ThingRequest thingReq = ThingRequest.ForDef(AntDefOf.Ant_RxlvnMash);
             PathEndMode peMode = PathEndMode.ClosestTouch;
             TraverseParms traverseParams = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false);
             Predicate<Thing> validator = predicate;

@@ -54,7 +54,7 @@ namespace AntiniumRaceCode
             {
                 initAction = delegate
                 {
-                    Thing thing = this.Barrel.TakeOutBeer();
+                    Thing thing = this.Barrel.TakeOutRxlvn();
                     GenPlace.TryPlaceThing(thing, this.pawn.Position, this.Map, ThingPlaceMode.Near, null, null);
                     StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(thing);
                     IntVec3 c;

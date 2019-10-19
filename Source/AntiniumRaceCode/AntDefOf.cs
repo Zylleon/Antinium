@@ -25,6 +25,12 @@ namespace AntiniumRaceCode
 
         public static ThingDef Ant_RxlvnFermentingBarrel;
         public static ThingDef Ant_RxlvnMash;
+        public static ThingDef Ant_Rxlvn;
+
+        public static JobDef TakeRxlvnOutOfFermentingBarrel;
+        public static JobDef FillRxlvnFermentingBarrel;
+
+
     }
     
 }

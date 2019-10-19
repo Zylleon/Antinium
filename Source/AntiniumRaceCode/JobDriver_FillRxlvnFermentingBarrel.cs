@@ -26,7 +26,7 @@ namespace AntiniumRaceCode
             }
         }
 
-        protected Thing Wort
+        protected Thing Ant_RxlvnMash
         {
             get
             {
@@ -43,7 +43,7 @@ namespace AntiniumRaceCode
             if (pawn.Reserve(target, job, 1, -1, null, errorOnFailed))
             {
                 pawn = this.pawn;
-                target = this.Wort;
+                target = this.Ant_RxlvnMash;
                 job = this.job;
                 arg_58_0 = pawn.Reserve(target, job, 1, -1, null, errorOnFailed);
             }
@@ -59,10 +59,10 @@ namespace AntiniumRaceCode
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
-            base.AddEndCondition(() => (this.Barrel.SpaceLeftForWort > 0) ? JobCondition.Ongoing : JobCondition.Succeeded);
+            base.AddEndCondition(() => (this.Barrel.SpaceLeftForMash > 0) ? JobCondition.Ongoing : JobCondition.Succeeded);
             yield return Toils_General.DoAtomic(delegate
             {
-                this.job.count = this.Barrel.SpaceLeftForWort;
+                this.job.count = this.Barrel.SpaceLeftForMash;
             });
             Toil reserveWort = Toils_Reserve.Reserve(TargetIndex.B, 1, -1, null);
             yield return reserveWort;
@@ -75,7 +75,7 @@ namespace AntiniumRaceCode
             {
                 initAction = delegate
                 {
-                    this.Barrel.AddWort(this.Wort);
+                    this.Barrel.AddMash(this.Ant_RxlvnMash);
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant
             };
