@@ -159,6 +159,7 @@
     <label>rxlvn fermenting barrel</label>
     <description>A barrel for fermenting raw rxlvn into rxlvn.</description>
     <thingClass>AntiniumRaceCode.Building_RxlvnFermentingBarrel</thingClass> 
+	<rotatable>false</rotatable>
     <graphicData>
       <texPath>Things/Building/Production/RxlvnBarrel/RxlvnBarrel</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
@@ -195,7 +196,6 @@
       </li>
     </comps>
     <tickerType>Rare</tickerType>
-    <rotatable>true</rotatable>
     <designationCategory>Production</designationCategory>
     <constructEffect>ConstructWood</constructEffect>
     <researchPrerequisites>

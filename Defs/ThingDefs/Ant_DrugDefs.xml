@@ -7,8 +7,10 @@
     <label>rxlvn</label>
     <description>A potent alcoholic beverage. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
     <graphicData>
-      <texPath>Things/Rxlvn</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <!--<texPath>Things/Rxlvn</texPath>-->
+	  <!--<graphicClass>Graphic_StackCount</graphicClass>-->
+	  <texPath>Things/Rxlvn/Rxlvn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
@@ -86,7 +88,7 @@
   
 	<RecipeDef>
 		<defName>Ant_Make_RxlvnMash</defName>
-		<label>make mash</label>
+		<label>make rxlvn mash</label>
 		<description>Make rxlvn mash from hops and insect meat.</description>
 		<jobString>Making mash.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
@@ -132,7 +134,7 @@
     <label>rxlvn mash</label>
     <description>Un-fermented rxlvn. This substance needs to ferment in a fermenting barrel before it becomes drinkable rxlvn.</description>
     <graphicData>
-      <texPath>Things/RxlvnMash</texPath>
+      <texPath>Things/RxlvnMash/RxlvnMash</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
