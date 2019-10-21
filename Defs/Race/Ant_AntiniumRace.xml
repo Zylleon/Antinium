@@ -156,6 +156,7 @@
         <graphicPaths>
 			<li>
 				<head>Antinium/Head/</head>
+				<!--<skull>Antinium/Skull/</skull>-->
 			</li>
         </graphicPaths>
         <hairSettings>

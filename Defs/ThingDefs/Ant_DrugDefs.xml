@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
   <ThingDef ParentName="DrugBase">
     <defName>Ant_Rxlvn</defName>
     <label>rxlvn</label>
-    <description>A potent alcoholic beverage. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+    <description>A dark alcoholic beverage with added potency from insect extracts. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+   
     <graphicData>
-      <!--<texPath>Things/Rxlvn</texPath>-->
-	  <!--<graphicClass>Graphic_StackCount</graphicClass>-->
-	  <texPath>Things/Rxlvn/Rxlvn</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/RxlvnBottle</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+	
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
