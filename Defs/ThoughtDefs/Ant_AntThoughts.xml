@@ -1,23 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <TraitDef>
-    <defName>Ant_BirdLover</defName>
-    <commonality>1.5</commonality>
-    <degreeDatas>
-      <li>
-        <label>bird lover</label>
-        <description>{PAWN_nameDef} loves birds.</description>
-      </li>
-    </degreeDatas>
-	<conflictingTraits>
-      <li>Cannibal</li>
-    </conflictingTraits>
-  </TraitDef>
-  
-  <!--thoughts-->
-  
-  
+<!-- Bird Lover -->
   <ThoughtDef>
     <defName>Ant_BirdLeatherApparel</defName>
     <workerClass>AntiniumRaceCode.ThoughtWorker_BirdLoverApparel</workerClass>
@@ -49,7 +33,6 @@
 		</requiredTraits>
   </ThoughtDef>
 	
-
 	
   <ThoughtDef>
     <defName>Ant_BirdLoverSawBird</defName>
@@ -88,7 +71,7 @@
 		</requiredTraits>
   </ThoughtDef>
 
-	
+
   <ThoughtDef>
     <defName>Ant_AteBirdMeatDirect</defName>
 		<showBubble>true</showBubble>
@@ -105,6 +88,7 @@
       </li>
     </stages>
   </ThoughtDef>
+  
   
   <ThoughtDef>
     <defName>Ant_AteBirdMeatAsIngredient</defName>
@@ -123,5 +107,5 @@
     </stages>
   </ThoughtDef>
 
-
+ 
 </Defs>

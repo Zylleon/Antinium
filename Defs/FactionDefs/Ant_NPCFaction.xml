@@ -30,16 +30,16 @@
       </points>
     </raidCommonalityFromPointsCurve>
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
-	  <li>Caravan_Neolithic_ShamanMerchant</li>
+      <li>Ant_Caravan_BulkGoods</li>
+      <li>Ant_Caravan_WarMerchant</li>
+      <li>Ant_Caravan_Slaver</li>
+	  <li>Ant_Caravan_ShamanMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
+      <li>Ant_Base_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-40</min>
