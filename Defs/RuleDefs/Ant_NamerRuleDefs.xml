@@ -6,12 +6,19 @@
     <defName>NamerPersonAntinium</defName>
     <rulePack>
       <rulesStrings>
-        <li>name(p=3)->[Chess]</li>
-		<li>name->[Syla]</li>
-		<li>name(p=3)->[Syla][Syla]</li>
-		<li>name(p=2)->[Syla][Syla][Syla]</li>
-		<li>name->[Syla][Syla][Syla][Syla]</li>
-		<!--<li>name(p=2)->[Job][Number]</li>-->
+		<li>name(p=2)->[ant_name]</li>
+		<li>name(p=1)->[ant_name] [ant_name]</li>
+		<li>name(p=1)->[ant_word] '[Chess]' [ant_word]</li>
+	  
+        <li>ant_name(p=2)->[Chess]</li>
+		<li>ant_name(p=7)->[ant_word]</li>
+		
+		
+		<li>ant_word(p=3)->[ant_syl]</li>
+		<li>ant_word(p=3)->[ant_syl][ant_syl]</li>
+		<li>ant_word(p=2)->[ant_syl][ant_syl][ant_syl]</li>
+		<li>ant_word->[ant_syl][ant_syl][ant_syl][ant_syl]</li>
+		
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -19,7 +26,7 @@
           <path>Antinium_Names/Chess</path>
         </li>
 		<li Class="Rule_File">
-          <keyword>Syla</keyword>
+          <keyword>ant_syl</keyword>
           <path>Antinium_Names/Antinium_Syllables</path>
         </li>
 		<li Class="Rule_File">

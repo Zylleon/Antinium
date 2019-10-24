@@ -25,15 +25,15 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>Steel</thingDef>
         <countRange>
-          <min>200</min>
-          <max>300</max>
+          <min>270</min>
+          <max>370</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>WoodLog</thingDef>
         <countRange>
-          <min>500</min>
-          <max>600</max>
+          <min>200</min>
+          <max>400</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -53,8 +53,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>Pemmican</thingDef>
         <countRange>
-          <min>500</min>
-          <max>1000</max>
+          <min>300</min>
+          <max>800</max>
         </countRange>
       </li>
       <li Class="StockGenerator_Category">
@@ -64,10 +64,11 @@
           <max>2</max>
         </thingDefCountRange>
         <totalPriceRange>
-          <min>300</min>
-          <max>700</max>
+          <min>500</min>
+          <max>900</max>
         </totalPriceRange>
       </li>
+	
       <li Class="StockGenerator_Category">
         <categoryDef>ResourcesRaw</categoryDef>
         <thingDefCountRange>
@@ -101,17 +102,18 @@
 			<li Class="StockGenerator_Clothes">
 				<maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
 				<countRange>
-					<min>4</min>
-					<max>12</max>
+					<min>-2</min>
+					<max>8</max>
 				</countRange>
 			</li>
       <li Class="StockGenerator_Animals">
-        <maxWildness>0.70</maxWildness>
         <tradeTagsSell>
           <li>AnimalFarm</li>
           <li>AnimalPet</li>
+		  <li>AnimalInsect</li>
         </tradeTagsSell>
         <tradeTagsBuy>
+		  <li>AnimalInsect</li>
           <li>AnimalUncommon</li>
           <li>AnimalExotic</li>
         </tradeTagsBuy>
@@ -138,8 +140,8 @@
       </li>
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>Chocolate</li>
           <li>Kibble</li>
+		  <li>Meat_Megaspider</li>
         </thingDefs>
       </li>
       <li Class="StockGenerator_WeaponsRanged">
@@ -259,10 +261,10 @@
         </countRange>
       </li>
       <li Class="StockGenerator_Animals">
-        <maxWildness>0.70</maxWildness>
         <tradeTagsSell>
           <li>AnimalFarm</li>
           <li>AnimalPet</li>
+		  <li>AnimalInsect</li>
         </tradeTagsSell>
         <tradeTagsBuy>
           <li>AnimalExotic</li>
@@ -312,6 +314,13 @@
           <max>300</max>
         </countRange>
       </li>
+	   <li Class="StockGenerator_SingleDef">
+        <thingDef>Meat_Megaspider</thingDef>
+			<countRange>
+			  <min>50</min>
+			  <max>200</max>
+			</countRange>
+      </li>
       <li Class="StockGenerator_WeaponsRanged">
         <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
         <countRange>
@@ -347,6 +356,7 @@
       <li Class="StockGenerator_Animals">
         <tradeTagsSell>
           <li>AnimalFighter</li>
+		  <li>AnimalInsect</li>
         </tradeTagsSell>
         <tradeTagsBuy>
           <li>AnimalExotic</li>
@@ -478,7 +488,7 @@
 			</li>
       <li Class="StockGenerator_Animals">
         <tradeTagsSell>
-          <li>AnimalUncommon</li>
+		  <li>AnimalInsect</li>
           <li>AnimalFighter</li>
         </tradeTagsSell>
         <tradeTagsBuy>
@@ -486,11 +496,11 @@
         </tradeTagsBuy>
         <kindCountRange>
           <min>1</min>
-          <max>2</max>
+          <max>3</max>
         </kindCountRange>
         <countRange>
           <min>3</min>
-          <max>4</max>
+          <max>6</max>
         </countRange>
       </li>
 			<li Class="StockGenerator_BuyArt" />
