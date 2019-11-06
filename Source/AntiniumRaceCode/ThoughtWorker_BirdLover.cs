@@ -16,7 +16,7 @@ namespace AntiniumRaceCode
             List<Apparel> wornApparel = p.apparel.WornApparel;
             for (int i = 0; i < wornApparel.Count; i++)
             {
-                if (wornApparel[i].Stuff.defName == "Leather_Bird")
+                if (wornApparel[i].Stuff?.defName == "Leather_Bird")
                 {
                     if (text == null)
                     {
@@ -47,12 +47,20 @@ namespace AntiniumRaceCode
 
         protected override ThoughtState CurrentStateInternal(Pawn pawn)
         {
+            if (pawn == null) { return false; }
+
             if (!pawn.Spawned || !pawn.RaceProps.Humanlike)
             {
                 return false;
             }
 
+            if (pawn?.story?.traits == null)
+            {
+                return false;
+            }
+
             TraitDef birdLover = DefDatabase<TraitDef>.GetNamed("Ant_BirdLover");
+
             if (!pawn.story.traits.HasTrait(birdLover))
             {
                 return false;
@@ -64,8 +72,8 @@ namespace AntiniumRaceCode
 
             List<Pawn> birdPawns = new List<Pawn>();
 
-            //birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird" || b.RaceProps.leatherDef.defName == "Leather_Bird").ToList();
-            birdPawns = mapPawns.Where(b => b.RaceProps.body.defName == "Bird").ToList();
+           
+            birdPawns = mapPawns.Where(b => b.RaceProps?.body?.defName == "Bird").ToList();
 
             if (birdPawns.Count > 0)
             {

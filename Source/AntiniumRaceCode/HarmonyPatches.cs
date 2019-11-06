@@ -63,20 +63,25 @@ namespace AntiniumRaceCode
         }
 
 
-        public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, List<ThoughtDef> ingestThoughts)
+        public static void AddIngestThoughtsFromIngredient_Prefix(ThingDef ingredient, Pawn ingester, ref List<ThoughtDef> ingestThoughts)
         {
             TraitDef birdLover = DefDatabase<TraitDef>.GetNamed("Ant_BirdLover");
 
-            if (ingester.story.traits.HasTrait(birdLover))
+            if (ingester?.story?.traits != null)
             {
-                //if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
-                if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" )
+                if (ingester.story.traits.HasTrait(birdLover))
                 {
-                    ThoughtDef ateBird = DefDatabase<ThoughtDef>.GetNamed("Ant_AteBirdMeatAsIngredient");
-                    ingestThoughts.Add(ateBird);
-                    //ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);
+                    //if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" || ingredient.ingestible.sourceDef.race.leatherDef.defName == "Leather_Bird")
+                    //if (ingredient.ingestible.sourceDef.race.body.defName == "Bird" )
+                    if (ingredient?.ingestible?.sourceDef?.race?.body?.defName == "Bird")
+                    {
+                        ThoughtDef ateBird = DefDatabase<ThoughtDef>.GetNamed("Ant_AteBirdMeatAsIngredient");
+                        ingestThoughts.Add(ateBird);
+                        //ingestThoughts.Add(AntDefOf.Ant_AteBirdMeatAsIngredient);
+                    }
                 }
             }
+
         }
 
 
