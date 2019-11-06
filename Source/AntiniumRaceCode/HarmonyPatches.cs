@@ -49,8 +49,16 @@ namespace AntiniumRaceCode
             postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("ModifyChemicalEffectForToleranceAndBodySize_Postfix"));
             harmony.Patch(targetmethod, null, postfixmethod);
 
+            #region HAR framework patches
+            //Posture
+            targetmethod = AccessTools.Method(typeof(AlienRace.HarmonyPatches), "PostureTweak");
+            postfixmethod = new HarmonyMethod(typeof(AntiniumRaceCode.HarmonyPatches).GetMethod("PostureTweak_Postfix"));
+            harmony.Patch(targetmethod, null, postfixmethod);
+            #endregion
+
         }
 
+        #region Rimworld patches
 
         // This method is now always called right before RimWorld.FoodUtility.AddFoodPoisoningHediff.
         public static bool AddFoodPoisoningHediff_Prefix(Pawn pawn)
@@ -143,7 +151,28 @@ namespace AntiniumRaceCode
 
             }
         }
+        #endregion
 
+
+
+        #region HAR framework patches
+        //Posture
+        public static void PostureTweak_Postfix(Pawn pawn, ref PawnPosture __result)
+        {
+            List<string> antBeds = new List<string>() { "AntSleepingSpot", "AntSleepingAlcove", "AntFluffFortress" };
+
+            if (pawn.kindDef?.race?.defName == "Ant_AntiniumRace")
+            {
+                if(antBeds.Contains(pawn.CurrentBed()?.def.defName))
+                {
+                    __result = PawnPosture.Standing;
+                }
+            }
+
+        }
+
+
+        #endregion
 
     }
 }

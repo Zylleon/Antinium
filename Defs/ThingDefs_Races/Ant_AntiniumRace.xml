@@ -50,7 +50,7 @@
 
     <alienRace>
         <generalSettings>
-			<canLayDown>false</canLayDown>
+			<!--<canLayDown>false</canLayDown>-->
 			<validBeds>
 				<li>AntSleepingSpot</li>
 				<li>AntSleepingAlcove</li>
@@ -301,6 +301,7 @@
 				<li>KnowButcheredHumanlikeCorpse</li>
 
 			</cannotReceiveThoughts>
+
         </thoughtSettings>
         <relationSettings>
 

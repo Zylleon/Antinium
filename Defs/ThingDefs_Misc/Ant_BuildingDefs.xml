@@ -82,7 +82,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>45</costStuffCount>
+    <costStuffCount>35</costStuffCount>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
@@ -134,7 +134,7 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <costStuffCount>120</costStuffCount>
+    <costStuffCount>100</costStuffCount>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
       <bed_healPerDay>10</bed_healPerDay>
