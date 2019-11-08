@@ -193,14 +193,14 @@
                     <replacer>Ant_NeedOutdoors</replacer> 
                 </li>
 		<!--bedroom and barracks-->
-				<li>
-                    <original>SleptInBedroom</original>
-                    <replacer>Ant_SleptInBedroom</replacer> 
-                </li>
-				<li>
-                    <original>SleptInBarracks</original>
-                    <replacer>Ant_SleptInBarracks</replacer> 
-                </li>
+		<!--		<li>											-->
+        <!--            <original>SleptInBedroom</original>			-->
+        <!--            <replacer>Ant_SleptInBedroom</replacer> 	-->
+        <!--        </li>											-->
+		<!--		<li>											-->
+        <!--            <original>SleptInBarracks</original>		-->
+        <!--            <replacer>Ant_SleptInBarracks</replacer> 	-->
+        <!--        </li>											-->
 		<!-- prison cells & barracks-->
 				<li>
                     <original>PrisonCell</original>
@@ -542,8 +542,8 @@
 
 
 <AlienRace.RaceSettings>
-    <defName>Ant_RaceSettings</defName>
-    <pawnKindSettings>
+  <defName>Ant_RaceSettings</defName>
+  <pawnKindSettings>
       <alienslavekinds>
         <li>
           <kindDefs>
@@ -552,18 +552,20 @@
           <chance>20.0</chance>
         </li>
       </alienslavekinds>
+	  
       <alienrefugeekinds>
         <li>
           <kindDefs>
             <li>Antinium</li>
 			<li>Ant_Combatant</li>
-			<li>Ant_Bowman<li>
+			<li>Ant_Bowman</li>
           </kindDefs>
           <chance>15.0</chance>
         </li>
       </alienrefugeekinds>
-    </pawnKindSettings>
-  </AlienRace.RaceSettings>
+
+  </pawnKindSettings>
+</AlienRace.RaceSettings>
 
 
  </Defs>
