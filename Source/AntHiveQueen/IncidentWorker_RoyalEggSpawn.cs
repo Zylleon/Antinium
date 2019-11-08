@@ -6,7 +6,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace AntHiveQueen
+namespace AntiniumHiveQueen
 {
     public class IncidentWorker_RoyalEggSpawn : IncidentWorker
     {
@@ -30,7 +30,7 @@ namespace AntHiveQueen
             {
                 return false;
             }
-            if (map.mapPawns.FreeHumanlikesOfFaction(Faction.OfPlayer).Where(p => p.kindDef.race.defName == "Ant_AntiniumRace").Count() < 4)
+            if (map.mapPawns.FreeHumanlikesOfFaction(Faction.OfPlayer).Where(p => p.kindDef?.race?.defName == "Ant_AntiniumRace").Count() < 4)
             {
                 return false;
             }
@@ -62,8 +62,14 @@ namespace AntHiveQueen
             {
                 return null;
             }
-            Find.LetterStack.ReceiveLetter("LetterLabelRoyalEgg".Translate(), "LetterRoyalEgg".Translate(), LetterDefOf.PositiveEvent);
+
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(AntHQDefOf.Ant_RoyalEgg, null), loc, map, WipeMode.FullRefund);
+
+            //Find.LetterStack.ReceiveLetter("LetterLabelRoyalEgg".Translate(), "LetterRoyalEgg".Translate(), LetterDefOf.PositiveEvent);
+
+            Find.LetterStack.ReceiveLetter("LetterLabelRoyalEgg".Translate(), "LetterRoyalEgg".Translate(), LetterDefOf.PositiveEvent, thing, null, null);
+
+            
             return thing;
         }
 
@@ -132,10 +138,11 @@ namespace AntHiveQueen
             {
                 score *= .1f;
             }
-            if (!cell.GetRoof(map).isThickRoof)
+            else if (!cell.GetRoof(map).isThickRoof)
             {
                 score *= .5f;
             }
+
             float mountainousnessScoreAt = GetMountainousnessScoreAt(cell, map);
             if (mountainousnessScoreAt < 0.17f)
             {

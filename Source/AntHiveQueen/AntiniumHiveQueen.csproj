@@ -7,8 +7,8 @@
     <ProjectGuid>{5077B11E-A99E-452C-953D-3343AD4D82A5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AntHiveQueen</RootNamespace>
-    <AssemblyName>AntHiveQueen</AssemblyName>
+    <RootNamespace>AntiniumHiveQueen</RootNamespace>
+    <AssemblyName>AntiniumHiveQueen</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

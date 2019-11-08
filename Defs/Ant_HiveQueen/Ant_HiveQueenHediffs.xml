@@ -8,10 +8,10 @@
 	<isBad>false</isBad>
 	<everCurableByItem>false</everCurableByItem>
 	<label>Hive Queen</label>
-	<hediffClass>AntiniumRaceCode.Hediff_HiveQueen</hediffClass>
-	<comps>
-      <li Class="AntiniumRaceCode.CompProperties_HiveQueenPresence" />
-    </comps>
+	<!--<hediffClass>AntiniumRaceCode.Hediff_HiveQueen</hediffClass>-->
+	<!--<comps>-->
+    <!-- <li Class="AntiniumRaceCode.CompProperties_HiveQueenPresence" />-->
+    <!--</comps>-->
 	
     <stages>
       <li>

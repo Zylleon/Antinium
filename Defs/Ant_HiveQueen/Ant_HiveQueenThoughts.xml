@@ -51,9 +51,9 @@
 
 <!-- Thoughts about the queen -->
 
-  <ThoughtDef>
+  <ThoughtDef> <!-- TODO: ThoughtWorker -->
     <defName>Ant_AntHasQueen</defName>
-    <workerClass>ThoughtWorker_AntHasQueen</workerClass>
+<!--     <workerClass>ThoughtWorker_AntHasQueen</workerClass>-->
     <stages>
       <li>
         <label>serving my queen</label>
@@ -65,7 +65,7 @@
   
   <ThoughtDef>
     <defName>Ant_OtherHasQueen</defName>
-    <workerClass>ThoughtWorker_AntHasQueen</workerClass>
+  <!--  <workerClass>ThoughtWorker_AntHasQueen</workerClass>-->
     <stages>
       <li>
         <label>serving my queen</label>
@@ -75,11 +75,11 @@
     </stages>
   </ThoughtDef>
  
- <!-- TODO: ThoughtWorker -->
+ 
 
-  <ThoughtDef>
+  <ThoughtDef>		<!-- TODO: ThoughtWorker -->
     <defName>Ant_AntQueenMood</defName>
-    <workerClass>ThoughtWorker_AntQueenMood</workerClass>
+  <!--  <workerClass>ThoughtWorker_AntQueenMood</workerClass>-->
      <stages>
       <li>
         <label>happy queen</label>
@@ -101,7 +101,7 @@
   
   <ThoughtDef>
     <defName>Ant_OtherQueenMood</defName>
-    <workerClass>ThoughtWorker_AntQueenMood</workerClass>
+<!--    <workerClass>ThoughtWorker_AntQueenMood</workerClass>-->
      <stages>
       <li>
         <label>happy queen</label>

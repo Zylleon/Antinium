@@ -6,7 +6,7 @@
     <defName>Ant_RoyalEgg</defName>
     <label>royal egg</label>
     <description>A giant egg. It almost seems to hum. You sense that it could be important.</description>
-    <thingClass>AntiniumRaceCode.Building_AntRoyalEgg</thingClass> 
+    <thingClass>AntiniumHiveQueen.Building_AntRoyalEgg</thingClass> 
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>

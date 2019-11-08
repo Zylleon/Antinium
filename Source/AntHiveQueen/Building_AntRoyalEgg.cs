@@ -8,7 +8,7 @@ using UnityEngine;
 using System.Diagnostics;
 using RimWorld.Planet;
 
-namespace AntHiveQueen
+namespace AntiniumHiveQueen
 {
 
     [StaticConstructorOnStartup]

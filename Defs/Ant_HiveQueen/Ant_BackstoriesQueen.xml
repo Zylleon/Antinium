@@ -50,6 +50,7 @@
     <title>Royal Larva</title>
     <titleShort>Larva</titleShort>
     <baseDescription>[PAWN_nameDef] was a royal larva. Guard her.</baseDescription>
+	<bodyTypeGlobal>Female</bodyTypeGlobal>
 	<slot>Childhood</slot>
 	<spawnCategories>
       <li>Ant_HiveQueenBackstories</li>

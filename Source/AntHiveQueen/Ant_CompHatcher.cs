@@ -8,7 +8,7 @@ using UnityEngine;
 using Verse;
 
 
-namespace AntHiveQueen
+namespace AntiniumHiveQueen
 {
     public class Ant_CompHatcher : ThingComp
     {
