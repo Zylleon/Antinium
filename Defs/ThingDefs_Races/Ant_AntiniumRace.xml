@@ -284,8 +284,13 @@
                     <replacer>Ant_KnowPrisonerSold</replacer> 
                 </li>
 				
+		<!--TEST STUFF GOES HERE-->
+
+				
             </replacerList>
+			
 			<cannotReceiveThoughts>
+
 				<li>Naked</li>
 				<li>EnvironmentDark</li>
 				<li>DeadMansApparel</li>
@@ -299,11 +304,17 @@
 				<li>SleepDisturbed</li>
 				<li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
+				
+			<!-- opinion thoughts -->
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+				<li>AteRawHumanlikeMeat</li>
 
 			</cannotReceiveThoughts>
 
         </thoughtSettings>
-        <relationSettings>
+        
+		
+		<relationSettings>
 
         </relationSettings>
         <raceRestriction>
@@ -528,4 +539,32 @@
 
 </AlienRace.ThingDef_AlienRace>
 
+
+
+<AlienRace.RaceSettings>
+    <defName>Ant_RaceSettings</defName>
+    <pawnKindSettings>
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>Antinium</li>
+          </kindDefs>
+          <chance>20.0</chance>
+        </li>
+      </alienslavekinds>
+      <alienrefugeekinds>
+        <li>
+          <kindDefs>
+            <li>Antinium</li>
+			<li>Ant_Combatant</li>
+			<li>Ant_Bowman<li>
+          </kindDefs>
+          <chance>15.0</chance>
+        </li>
+      </alienrefugeekinds>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+
  </Defs>
+ 
