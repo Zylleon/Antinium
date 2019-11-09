@@ -172,7 +172,7 @@
                 </lifeStageDefs>
                 <body>Antinium/Larva/</body>
                 <head />
-                <skeleton>Antinium/Larva/</skeleton>
+                <skeleton>Antinium/DessicatedLarva/DessicatedLarva</skeleton>
                 <skull/>
             </li>
         </graphicPaths>

@@ -31,9 +31,9 @@
         <glowColor>(128,107,50,0)</glowColor>
       </li>
       <li Class="CompProperties_TemperatureRuinable">
-        <minSafeTemperature>-10</minSafeTemperature>
+        <minSafeTemperature>-5</minSafeTemperature>
         <maxSafeTemperature>45</maxSafeTemperature>
-        <progressPerDegreePerTick>0.000005</progressPerDegreePerTick>
+        <progressPerDegreePerTick>0.000002</progressPerDegreePerTick>
       </li>
     </comps>
 	
