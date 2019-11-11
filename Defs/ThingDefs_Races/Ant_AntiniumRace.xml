@@ -184,10 +184,7 @@
 				<!--AteInsectMeatDirect-->	
 				<!--AteInsectMeatAsIngredient-->	
 		<!--outdoors and room size-->		
-				<li>
-                    <original>NeedRoomSize</original>
-                    <replacer>Ant_NeedRoomSize</replacer> 
-                </li>
+
 				<li>
                     <original>NeedOutdoors</original>
                     <replacer>Ant_NeedOutdoors</replacer> 
@@ -201,15 +198,7 @@
         <!--            <original>SleptInBarracks</original>		-->
         <!--            <replacer>Ant_SleptInBarracks</replacer> 	-->
         <!--        </li>											-->
-		<!-- prison cells & barracks-->
-				<li>
-                    <original>PrisonCell</original>
-                    <replacer>Ant_PrisonCell</replacer> 
-                </li>
-				<li>
-                    <original>PrisonBarracks</original>
-                    <replacer>Ant_PrisonBarracks</replacer> 
-                </li>
+
 		<!--death-->		
 				<li>
                     <original>KnowGuestExecuted</original>
@@ -307,9 +296,21 @@
 				
 			<!-- opinion thoughts -->
 				<li>ButcheredHumanlikeCorpseOpinion</li>
-				<li>AteRawHumanlikeMeat</li>
+				<li>AteRawHumanlikeMeat</li>				
+				
+				<li>PrisonBarracks</li>
+				<li>NeedRoomSize</li>
+				<li>PrisonCell</li>
+				<li>NeedOutdoors</li>
 
 			</cannotReceiveThoughts>
+			
+			<restrictedThoughts>
+				<li>Ant_PrisonBarracks</li>
+				<li>Ant_NeedRoomSize</li>
+				<li>Ant_PrisonCell</li>
+				<li>Ant_NeedOutdoors</li>
+			</restrictedThoughts>
 
         </thoughtSettings>
         
