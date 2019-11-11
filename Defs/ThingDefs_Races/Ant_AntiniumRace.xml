@@ -320,9 +320,9 @@
 				<li>Ant_OtherQueenMood</li>
 			</cannotReceiveThoughts>
 			
-	<!--		<restrictedThoughts>-->
-    <!--            <li>Ant_AntQueenMood</li>-->
-    <!--        </restrictedThoughts>-->
+			<restrictedThoughts>
+                <li>Ant_AntQueenMood</li>
+            </restrictedThoughts>
 			
         </thoughtSettings>
         <relationSettings>

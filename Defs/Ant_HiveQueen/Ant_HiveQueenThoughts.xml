@@ -77,10 +77,9 @@
  
  
 
-  <ThoughtDef>		<!-- TODO: ThoughtWorker -->
+  <ThoughtDef>		
     <defName>Ant_AntQueenMood</defName>
     <workerClass>AntiniumHiveQueen.ThoughtWorker_AntQueenMood</workerClass>
-	<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
      <stages>
       <li>
         <label>very upset queen</label>
@@ -104,7 +103,6 @@
   <ThoughtDef>
     <defName>Ant_OtherQueenMood</defName>
 	<workerClass>AntiniumHiveQueen.ThoughtWorker_AntQueenMood</workerClass>
-	<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
      <stages>
 	 <li>
         <label>very upset queen</label>
