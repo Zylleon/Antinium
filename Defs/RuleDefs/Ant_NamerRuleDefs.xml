@@ -29,14 +29,7 @@
           <keyword>ant_syl</keyword>
           <path>Antinium_Names/Antinium_Syllables</path>
         </li>
-		<li Class="Rule_File">
-          <keyword>Number</keyword>
-          <path>Antinium_Names/Ant_Numbers</path>
-        </li>
-		<li Class="Rule_File">
-          <keyword>Job</keyword>
-          <path>Antinium_Names/Ant_Job_Titles</path>
-        </li>
+
       </rulesRaw>
     </rulePack>
   </RulePackDef>
