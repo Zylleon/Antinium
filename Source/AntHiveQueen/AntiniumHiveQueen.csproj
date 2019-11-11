@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="AntHQDefOf.cs" />
     <Compile Include="Building_AntRoyalEgg.cs" />
+    <Compile Include="CompHQPresence.cs" />
+    <Compile Include="CompProperties_HQPresence.cs" />
     <Compile Include="IncidentWorker_RoyalEggSpawn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

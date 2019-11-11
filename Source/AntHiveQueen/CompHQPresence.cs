@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using RimWorld;
+using Verse;
+using Verse.Sound;
+
+namespace AntiniumHiveQueen
+{
+    public class CompHQPresence : ThingComp
+    {
+        private int queenMaturity = 0;
+        // 0 infant to maturity
+        // 1 first year of maturity
+        // 2? 2nd year of maturity+
+
+        public int QueenMaturity
+        {
+            get
+            {
+                return this.queenMaturity;
+            }
+        }
+
+
+
+        private bool Active
+        {
+            get
+            {
+                Pawn pawn = this.parent as Pawn;
+                TraitDef queenTrait = DefDatabase<TraitDef>.GetNamed("Ant_HiveQueenTrait");
+                return pawn.story.traits.HasTrait(queenTrait);
+            }
+        }
+
+
+        public override void CompTick()
+        {
+            if (this.Active)
+            {
+                Pawn pawn = this.parent as Pawn;
+                if (pawn != null)
+                {
+                    // to spread this out a bit
+                    if (Find.TickManager.TicksGame % 3803 == 0)
+                    {
+                        // not exactly a gamecondition?
+                        // apply relationship to colonists?
+                        ApplyQueenRelation(pawn);
+                        ApplyQueenHediff(pawn.Map);
+                    }
+
+                    switch (queenMaturity)
+                    {
+                        case 0:
+                            // she's underage
+                            // age queen if needed - 1 year per day?
+                            // increase queenMaturity if needed
+
+                            pawn.ageTracker.AgeBiologicalTicks += (long)60;
+                            
+                            if(pawn.ageTracker.AgeBiologicalYears >= 18)                
+                            {
+                                // Add adult backstory
+                                queenMaturity++;
+                            }
+                            break;
+                        case 1:
+                            // This is the only adult phase to be implemented right now
+
+                                break;
+                        default:
+                            break;
+                    }
+
+
+                }
+            }
+        }
+
+        private static void ApplyQueenRelation(Pawn pawn)
+        {
+
+            PawnRelationDef relation = DefDatabase<PawnRelationDef>.GetNamed("Ant_QueenRelation");
+            // all free colonists on map
+            IEnumerable<Pawn> colonists = pawn.Map.mapPawns.FreeColonists;
+            foreach (Pawn c in colonists.Where(p => p.RaceProps.Humanlike))
+            {
+                // Check for existing relationship first, can this be doubled ?
+                c.relations.AddDirectRelation(relation, pawn);
+            }
+
+        }
+
+
+        private static void ApplyQueenHediff(Map map)
+        {
+            List<Pawn> colonists = map.mapPawns.FreeColonists.ToList();
+            for (int i = 0; i < colonists.Count; i++)
+            {
+                Pawn pawn = colonists[i];
+                if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+                {
+                    SetQueenHediffSeverity(pawn, 1f);
+                }
+                else if (pawn.GetStatValue(StatDefOf.PsychicSensitivity, true) >= 1.3)
+                {
+                    SetQueenHediffSeverity(pawn, 0.5f);
+                }
+            }
+        }
+
+
+        private static void SetQueenHediffSeverity(Pawn pawn, float severity)
+        {
+            Hediff olddiff = pawn.health.hediffSet.GetFirstHediffOfDef(AntHQDefOf.Ant_HiveQueenInspHediff, false);
+            if (olddiff != null)
+            {
+                pawn.health.RemoveHediff(olddiff);
+            }
+
+
+            if (severity > 0f)
+            {
+                Hediff hediff = HediffMaker.MakeHediff(AntHQDefOf.Ant_HiveQueenInspHediff, pawn, null);
+                hediff.Severity = severity;
+                pawn.health.AddHediff(hediff, null, null, null);
+            }
+
+
+            //if (hediff != null)
+            //{
+            //    hediff.Severity = severity;
+            //}
+            //else if (severity > 0f)
+            //{
+            //    hediff = HediffMaker.MakeHediff(AntHQDefOf.Ant_HiveQueenInspHediff, pawn, null);
+            //    hediff.Severity = severity;
+            //    pawn.health.AddHediff(hediff, null, null, null);
+            //}
+        }
+
+    }
+}

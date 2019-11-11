@@ -27,26 +27,6 @@
     </stages>
   </HediffDef>
 
-
-<HediffDef>
-    <defName>Ant_RoyalLarvaHediff</defName>
-	<initialSeverity>1</initialSeverity>
-	<label>Royal Larva</label>
-	<isBad>false</isBad>
-    <stages>
-      <li>
-        <becomeVisible>false</becomeVisible>
-		<hungerRateFactorOffset>1.5</hungerRateFactorOffset>
-        <capMods>
-			<li>
-				<capacity>Moving</capacity>
-				<postFactor>0</postFactor>
-			</li>
-	    </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-  
   
 
   <HediffDef>								<!-- the Queen's followers -->

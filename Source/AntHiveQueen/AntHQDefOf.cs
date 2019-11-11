@@ -23,6 +23,7 @@ namespace AntiniumHiveQueen
         public static FactionDef Ant_GenTwoFaction;
         public static FactionDef Ant_QueenFaction;
 
+
         //public static GameCondition GameCondition_HiveQueen;
         // public static GameCondition GameCondition_HiveQueenDied;
 
