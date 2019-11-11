@@ -101,26 +101,61 @@ namespace AntiniumHiveQueen
             for (int i = 0; i < colonists.Count; i++)
             {
                 Pawn pawn = colonists[i];
-                if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+                if (pawn.RaceProps.Humanlike)
                 {
-                    SetQueenHediffSeverity(pawn, 1f);
+                    SetQueenHediffSeverity(pawn);
                 }
-                else if (pawn.GetStatValue(StatDefOf.PsychicSensitivity, true) >= 1.3)
-                {
-                    SetQueenHediffSeverity(pawn, 0.5f);
-                }
+                //if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+                //{
+                //    SetQueenHediffSeverity(pawn, 1f);
+                //}
+                //else if (pawn.GetStatValue(StatDefOf.PsychicSensitivity, true) >= 1.3)
+                //{
+                //    SetQueenHediffSeverity(pawn, 0.5f);
+                //}
             }
         }
 
 
-        private static void SetQueenHediffSeverity(Pawn pawn, float severity)
+        private static void SetQueenHediffSeverity(Pawn pawn)
         {
+            float severity = 0f;
+
+            float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
+
+            // set severity
+            if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+            {
+                severity = .5f;
+            }
+
+            if (hyper <= .3)
+            {
+                severity -= .35f;
+            }
+
+            else if (hyper <= .6)
+            {
+                severity -= .15f;
+            }
+
+            if (hyper >= 1.7)
+            {
+                severity += .35f;
+            }
+
+            else if (hyper >= 1.3)
+            {
+                severity += .15f;
+            }
+
+
+            // do hediff
             Hediff olddiff = pawn.health.hediffSet.GetFirstHediffOfDef(AntHQDefOf.Ant_HiveQueenInspHediff, false);
             if (olddiff != null)
             {
                 pawn.health.RemoveHediff(olddiff);
             }
-
 
             if (severity > 0f)
             {
@@ -130,16 +165,6 @@ namespace AntiniumHiveQueen
             }
 
 
-            //if (hediff != null)
-            //{
-            //    hediff.Severity = severity;
-            //}
-            //else if (severity > 0f)
-            //{
-            //    hediff = HediffMaker.MakeHediff(AntHQDefOf.Ant_HiveQueenInspHediff, pawn, null);
-            //    hediff.Severity = severity;
-            //    pawn.health.AddHediff(hediff, null, null, null);
-            //}
         }
 
     }

@@ -46,9 +46,24 @@
     <stages>
 	
       <li>
-        <label>minor</label>
+        <label>diminished</label>
 		<capMods>
           <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.05</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>0.05</offset>
+          </li>
+        </capMods>
+      </li>
+	  
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <label>dulled</label>
+        <capMods>
+		  <li>
             <capacity>Consciousness</capacity>
             <offset>0.05</offset>
           </li>
@@ -61,19 +76,15 @@
             <offset>0.05</offset>
           </li>
 		  <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.05</offset>
-          </li>
-		  <li>
             <capacity>Breathing</capacity>
             <offset>0.05</offset>
           </li>
         </capMods>
       </li>
 	  
-      <li>
-        <minSeverity>0.60</minSeverity>
-        <label>Major</label>
+	   <li>
+        <minSeverity>0.40</minSeverity>
+		<painOffset>-0.05</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -88,12 +99,69 @@
             <offset>0.1</offset>
           </li>
 		  <li>
+            <capacity>Breathing</capacity>
+            <offset>0.05</offset>
+          </li>
+		  <li>
             <capacity>BloodFiltration</capacity>
+            <offset>0.05</offset>
+          </li>
+
+        </capMods>
+      </li>
+	  
+	   <li>
+        <minSeverity>0.60</minSeverity>
+        <label>enhanced</label>
+		<painOffset>-0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
             <offset>0.1</offset>
           </li>
 		  <li>
             <capacity>Breathing</capacity>
+            <offset>0.05</offset>
+          </li>
+		  <li>
+            <capacity>BloodFiltration</capacity>
             <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+	  
+	   <li>
+        <minSeverity>0.80</minSeverity>
+        <label>heightened</label>
+		<painOffset>-0.2</painOffset>
+        <capMods>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>0.15</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.15</offset>
+          </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>0.1</offset>
+          </li>
+		  <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.15</offset>
           </li>
         </capMods>
       </li>
