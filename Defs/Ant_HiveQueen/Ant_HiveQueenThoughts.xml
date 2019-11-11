@@ -79,44 +79,48 @@
 
   <ThoughtDef>		<!-- TODO: ThoughtWorker -->
     <defName>Ant_AntQueenMood</defName>
-  <!--  <workerClass>ThoughtWorker_AntQueenMood</workerClass>-->
+    <workerClass>AntiniumHiveQueen.ThoughtWorker_AntQueenMood</workerClass>
+	<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
      <stages>
-      <li>
-        <label>happy queen</label>
-        <description>My queen is happy. All is right with the world.</description>
-        <baseMoodEffect>12</baseMoodEffect>
-      </li>
-      <li>
-        <label>upset queen</label>
-        <description>My queen is upset.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
-      </li>
       <li>
         <label>very upset queen</label>
         <description>My queen is stressed and angry. I can't be happy when my queen is so upset.</description>
         <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+	  <li>
+        <label>upset queen</label>
+        <description>My queen is upset.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+	  <li IsNull="True" />
+	  <li>
+        <label>happy queen</label>
+        <description>My queen is happy. All is right with the world.</description>
+        <baseMoodEffect>12</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   
   <ThoughtDef>
     <defName>Ant_OtherQueenMood</defName>
-<!--    <workerClass>ThoughtWorker_AntQueenMood</workerClass>-->
+	<workerClass>AntiniumHiveQueen.ThoughtWorker_AntQueenMood</workerClass>
+	<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
      <stages>
-      <li>
-        <label>happy queen</label>
-        <description>It feels like things are looking up.</description>
-        <baseMoodEffect>6</baseMoodEffect>
+	 <li>
+        <label>very upset queen</label>
+        <description>I feel uncomfortable and anxious. It seems as if everything is going to take a turn for the worse.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
-      <li>
+	  <li>
         <label>upset queen</label>
         <description>I feel uneasy. I'm not sure why.</description>
         <baseMoodEffect>-4</baseMoodEffect>
       </li>
+	  <li IsNull="True" />
       <li>
-        <label>very upset queen</label>
-        <description>I feel uncomfortable and anxious. It seems as if everything is going to take a turn for the worse.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
+        <label>happy queen</label>
+        <description>It feels like things are looking up.</description>
+        <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
