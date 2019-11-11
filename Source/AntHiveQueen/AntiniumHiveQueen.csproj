@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AntHQDefOf.cs" />
-    <Compile Include="Ant_CompHatcher.cs" />
     <Compile Include="Building_AntRoyalEgg.cs" />
     <Compile Include="IncidentWorker_RoyalEggSpawn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
