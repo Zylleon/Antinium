@@ -75,7 +75,19 @@
     </stages>
   </ThoughtDef>
  
- 
+  <ThoughtDef>		
+    <defName>Ant_QueenHealthEmergency</defName>
+    <workerClass>AntiniumHiveQueen.ThoughtWorker_QueenHealthEmergency</workerClass>
+     <stages>
+      <li>
+        <label>Queen is dying</label>
+        <description>The Queen is dying! I should help her if I can.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!-- Queen mood --> 
 
   <ThoughtDef>		
     <defName>Ant_AntQueenMood</defName>

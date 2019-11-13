@@ -80,16 +80,19 @@ namespace AntiniumHiveQueen
             }
         }
 
-        private static void ApplyQueenRelation(Pawn pawn)
+        private static void ApplyQueenRelation(Pawn queen)
         {
 
             PawnRelationDef relation = DefDatabase<PawnRelationDef>.GetNamed("Ant_QueenRelation");
             // all free colonists on map
-            IEnumerable<Pawn> colonists = pawn.Map.mapPawns.FreeColonists;
-            foreach (Pawn c in colonists.Where(p => p.RaceProps.Humanlike))
+            IEnumerable<Pawn> colonists = queen.Map.mapPawns.FreeColonists;
+            foreach (Pawn c in colonists.Where(p => p.RaceProps.Humanlike && p != queen))
             {
-                // Check for existing relationship first, can this be doubled ?
-                c.relations.AddDirectRelation(relation, pawn);
+                if (c.relations.GetDirectRelation(relation, queen) == null)
+                {
+                    c.relations.AddDirectRelation(relation, queen);
+                }
+
             }
 
         }
