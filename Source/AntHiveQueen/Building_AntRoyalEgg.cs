@@ -145,27 +145,14 @@ namespace AntiniumHiveQueen
 
                         pawn.SetFaction(Faction.OfPlayer);
 
-                        //AlienRace.BackstoryDef royalLarva = DefDatabase<AlienRace.BackstoryDef>.GetNamed("Ant_RoyalLarvaBackstory");
-                        //AlienRace.BackstoryDef queen = DefDatabase<AlienRace.BackstoryDef>.GetNamed("Ant_HiveQueenBackstory");
-
-                        //pawn.story.childhood = royalLarva;
-                        //pawn.story.adulthood = queen;
-
                         TraitDef queenTrait = DefDatabase<TraitDef>.GetNamed("Ant_HiveQueenTrait");
                         List<Trait> traits = new List<Trait> { new Trait(queenTrait) };
                         pawn.story.traits.allTraits = traits;
 
-                        pawn.health.AddHediff(AntHQDefOf.Ant_HiveQueenHediff);
+                        pawn.health.AddHediff(AntHQDefOf.Ant_RoyalLarvaHediff);
                         Find.LetterStack.ReceiveLetter("LetterLabelRoyalLarva".Translate(pawn), "LetterRoyalLarva".Translate(pawn), LetterDefOf.PositiveEvent);
 
                         FilthMaker.MakeFilth(this.Position, this.Map, ThingDefOf.Filth_AmnioticFluid, 1);
-
-                        // start game condition?
-
-
-
-
-
                     }
 
                 }

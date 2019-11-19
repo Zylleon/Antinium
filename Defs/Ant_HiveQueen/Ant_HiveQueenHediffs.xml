@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<HediffDef>								<!-- Royal Larva -->
+    <defName>Ant_RoyalLarvaHediff</defName>
+	<initialSeverity>1</initialSeverity>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<label>Royal Larva</label>
+	<hediffClass>AntiniumHiveQueen.Hediff_RoyalLarva</hediffClass>
+	<comps>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+         <severityPerDay>-0.033333</severityPerDay>
+      </li>
+    </comps>
+	
+    <stages>
+	  <li>
+        <becomeVisible>true</becomeVisible>
+		<hungerRateFactorOffset>1</hungerRateFactorOffset>
+        <capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>0.7</postFactor>
+			</li>
+	    </capMods>
+      </li>
+	  <li>
+        <minSeverity>0.25</minSeverity>
+        <becomeVisible>true</becomeVisible>
+		<hungerRateFactorOffset>1.2</hungerRateFactorOffset>
+        <capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>0.5</postFactor>
+			</li>
+	    </capMods>
+      </li>
+	  <li>
+        <minSeverity>0.50</minSeverity>
+        <becomeVisible>true</becomeVisible>
+		<hungerRateFactorOffset>1.5</hungerRateFactorOffset>
+        <capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>0</postFactor>
+			</li>
+	    </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <becomeVisible>true</becomeVisible>
+		<hungerRateFactorOffset>2</hungerRateFactorOffset>
+        <capMods>
+			<li>
+				<capacity>Moving</capacity>
+				<postFactor>0</postFactor>
+			</li>
+	    </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
 
-  <HediffDef>								<!-- for the Queen herself -->
+
+ <HediffDef>								<!-- the Queen herself -->
     <defName>Ant_HiveQueenHediff</defName>
 	<initialSeverity>1</initialSeverity>
 	<isBad>false</isBad>
 	<everCurableByItem>false</everCurableByItem>
-	<label>Hive Queen</label>
+	<label>HiveQueen</label>
 	<!--<hediffClass>AntiniumRaceCode.Hediff_HiveQueen</hediffClass>-->
 	<!--<comps>-->
     <!-- <li Class="AntiniumRaceCode.CompProperties_HiveQueenPresence" />-->
@@ -26,7 +88,6 @@
       </li>
     </stages>
   </HediffDef>
-
   
 
   <HediffDef>								<!-- the Queen's followers -->

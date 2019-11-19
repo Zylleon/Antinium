@@ -46,34 +46,46 @@ namespace AntiniumHiveQueen
                     // to spread this out a bit
                     if (Find.TickManager.TicksGame % 3803 == 0)
                     {
-                        // not exactly a gamecondition?
-                        // apply relationship to colonists?
+
                         ApplyQueenRelation(pawn);
+
+                        int age = pawn.ageTracker.AgeBiologicalYears;
+
+                        if (age >= 20)
+                        {
+                            queenMaturity++;
+                        }
+
                         ApplyQueenHediff(pawn.Map);
+                       
                     }
 
-                    switch (queenMaturity)
-                    {
-                        case 0:
-                            // she's underage
-                            // age queen if needed - 1 year per day?
-                            // increase queenMaturity if needed
+                    //int age = pawn.ageTracker.AgeBiologicalYears;
 
-                            pawn.ageTracker.AgeBiologicalTicks += (long)60;
+
+
+
+                    //switch (queenMaturity)
+                    //{
+                    //    case 0:
+                    //        // she's underage
+                    //        // age queen if needed - 1 year per day
+                    //        // increase queenMaturity if needed
+                    //        pawn.ageTracker.AgeBiologicalTicks += (long)60;
                             
-                            if(pawn.ageTracker.AgeBiologicalYears >= 18)                
-                            {
-                                // Add adult backstory
-                                queenMaturity++;
-                            }
-                            break;
-                        case 1:
-                            // This is the only adult phase to be implemented right now
+                    //        if(pawn.ageTracker.AgeBiologicalYears >= 18)                
+                    //        {
+                    //            // Add adult backstory
+                    //            queenMaturity++;
+                    //        }
+                    //        break;
+                    //    case 1:
+                    //        // This is the only adult phase to be implemented right now
 
-                                break;
-                        default:
-                            break;
-                    }
+                    //            break;
+                    //    default:
+                    //        break;
+                    //}
 
 
                 }
@@ -82,14 +94,32 @@ namespace AntiniumHiveQueen
 
         private static void ApplyQueenRelation(Pawn queen)
         {
-
+            Log.Message("Step 1");
             PawnRelationDef relation = DefDatabase<PawnRelationDef>.GetNamed("Ant_QueenRelation");
+            Log.Message("Step 2");
             // all free colonists on map
-            IEnumerable<Pawn> colonists = queen.Map.mapPawns.FreeColonists;
+            //IEnumerable<Pawn> colonists = queen.Map.mapPawns.FreeColonists;
+            List<Pawn> colonists = new List<Pawn>();
+            colonists = queen.Map.mapPawns.FreeColonists.ToList();
+            Log.Message("Step3");
             foreach (Pawn c in colonists.Where(p => p.RaceProps.Humanlike && p != queen))
             {
+            Log.Message("Step 4");
                 if (c.relations.GetDirectRelation(relation, queen) == null)
                 {
+            Log.Message("Step 5");
+                    // remove any old Q relations
+                    List<DirectPawnRelation> others = new List<DirectPawnRelation>();
+                    others = c.relations.DirectRelations.Where(r => r.def == relation).ToList();
+
+                    if (others.Count != 0)
+                    {
+                        foreach(DirectPawnRelation r in others)
+                        {
+                            c.relations.RemoveDirectRelation(r);
+                        }
+                    }
+                    // add new Q relation
                     c.relations.AddDirectRelation(relation, queen);
                 }
 
@@ -124,33 +154,37 @@ namespace AntiniumHiveQueen
         {
             float severity = 0f;
 
-            float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
+            severity = HiveQueenUtility.GetPawnHQFactor(pawn);
+
+
+
+            //float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
 
             // set severity
-            if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
-            {
-                severity = .5f;
-            }
+            //if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+            //{
+            //    severity = .5f;
+            //}
 
-            if (hyper <= .3)
-            {
-                severity -= .35f;
-            }
+            //if (hyper <= .3)
+            //{
+            //    severity -= .35f;
+            //}
 
-            else if (hyper <= .6)
-            {
-                severity -= .15f;
-            }
+            //else if (hyper <= .6)
+            //{
+            //    severity -= .15f;
+            //}
 
-            if (hyper >= 1.7)
-            {
-                severity += .35f;
-            }
+            //if (hyper >= 1.7)
+            //{
+            //    severity += .35f;
+            //}
 
-            else if (hyper >= 1.3)
-            {
-                severity += .15f;
-            }
+            //else if (hyper >= 1.3)
+            //{
+            //    severity += .15f;
+            //}
 
 
             // do hediff

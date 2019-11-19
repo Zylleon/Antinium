@@ -51,6 +51,8 @@
     <Compile Include="Building_AntRoyalEgg.cs" />
     <Compile Include="CompHQPresence.cs" />
     <Compile Include="CompProperties_HQPresence.cs" />
+    <Compile Include="Hediff_RoyalLarva.cs" />
+    <Compile Include="HiveQueenUtility.cs" />
     <Compile Include="IncidentWorker_RoyalEggSpawn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThoughtWorker_AntQueenMood.cs" />
