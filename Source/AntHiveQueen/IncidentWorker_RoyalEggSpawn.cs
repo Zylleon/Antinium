@@ -136,7 +136,7 @@ namespace AntiniumHiveQueen
 
             if (!cell.Roofed(map))
             {
-                score *= .1f;
+                score *= .03f;
             }
             else if (!cell.GetRoof(map).isThickRoof)
             {
@@ -146,7 +146,7 @@ namespace AntiniumHiveQueen
             float mountainousnessScoreAt = GetMountainousnessScoreAt(cell, map);
             if (mountainousnessScoreAt < 0.17f)
             {
-                score *= .5f;
+                score *= .3f;
             }
 
             return score;

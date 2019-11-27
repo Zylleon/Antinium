@@ -11,6 +11,11 @@
       <li>
         <label>hive queen</label>
         <description>{PAWN_nameDef} was born to rule.</description>
+		<statOffsets>
+          <MoveSpeed>-0.2</MoveSpeed>
+		  <HungerRateMultiplier>0.30</HungerRateMultiplier>
+		  <WorkSpeedGlobal>-0.30</WorkSpeedGlobal>
+        </statOffsets>
       </li>
     </degreeDatas>
   </TraitDef>

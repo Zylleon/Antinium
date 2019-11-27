@@ -169,6 +169,7 @@
                 <lifeStageDefs>
                     <li>HumanlikeBaby</li>
 					<li>HumanlikeToddler</li>
+					<li>HumanlikeChild</li>
                 </lifeStageDefs>
                 <body>Antinium/Larva/</body>
                 <head />

@@ -18,7 +18,7 @@ namespace AntiniumHiveQueen
         // public static HediffDef Ant_RoyalLarvaHediff;
 
         public static PawnRelationDef Ant_QueenRelation;
-        public static HediffDef Ant_HiveQueenHediff;
+        //public static HediffDef Ant_HiveQueenHediff;
         public static HediffDef Ant_HiveQueenInspHediff;
         public static ThingDef Ant_RoyalEgg;
 

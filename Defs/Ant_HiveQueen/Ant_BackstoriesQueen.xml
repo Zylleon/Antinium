@@ -23,9 +23,6 @@
     </forcedTraits>
 	<maleCommonality>0</maleCommonality>
 	<femaleCommonality>100</femaleCommonality>
-	<forcedHediffs>
-      <li>Ant_HiveQueenHediff</li>
-    </forcedHediffs>
 	<disallowedTraits>
 		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
@@ -68,9 +65,6 @@
         </li>
     </forcedTraits>
 	<linkedBackstory>Ant_HiveQueenBackstory</linkedBackstory>
-	<forcedHediffs>
-      <li>Ant_HiveQueenHediff</li>
-    </forcedHediffs>
 </AlienRace.BackstoryDef>
 
 

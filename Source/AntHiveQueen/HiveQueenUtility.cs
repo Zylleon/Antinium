@@ -29,27 +29,30 @@ namespace AntiniumHiveQueen
 
 
             // psychic sensitivity
-
             float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
-            if (hyper <= .3)
-            {
-                factor -= .35f;
-            }
 
-            else if (hyper <= .6)
-            {
-                factor -= .15f;
-            }
+            factor += (hyper - 1) * 0.5f;
 
-            if (hyper >= 1.7)
-            {
-                factor += .35f;
-            }
 
-            else if (hyper >= 1.3)
-            {
-                factor += .15f;
-            }
+            //if (hyper <= .3)
+            //{
+            //    factor -= .35f;
+            //}
+
+            //else if (hyper <= .6)
+            //{
+            //    factor -= .15f;
+            //}
+
+            //if (hyper >= 1.7)
+            //{
+            //    factor += .35f;
+            //}
+
+            //else if (hyper >= 1.3)
+            //{
+            //    factor += .15f;
+            //}
 
             // Min 5 pct for ants, if req.
             if (reqForAnts && pawn.kindDef.race.defName == "Ant_AntiniumRace")
@@ -59,6 +62,60 @@ namespace AntiniumHiveQueen
 
             return factor;
         }
+
+
+
+        // general sensitivity to queen effects, 0-4
+        public static int GetPawnHQScore(Pawn pawn, bool antsOnly = false, bool reqForAnts = true)
+        {
+            int factor = 0;
+
+            if (antsOnly && !(pawn.kindDef.race.defName == "Ant_AntiniumRace"))
+            {
+                return 0;
+            }
+
+
+            // default increase for ants
+            if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
+            {
+                factor = 2;
+            }
+
+            // psychic sensitivity
+            float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
+
+
+            if (hyper <= .3)
+            {
+                factor -= 2;
+            }
+
+            else if (hyper <= .6)
+            {
+                factor -= 1;
+            }
+
+            if (hyper >= 1.7)
+            {
+                factor += 2;
+            }
+
+            else if (hyper >= 1.3)
+            {
+                factor += 1;
+            }
+
+            // Min 1 pt for ants, if req.
+            if (reqForAnts && pawn.kindDef.race.defName == "Ant_AntiniumRace")
+            {
+                factor = Math.Max(factor, 1);
+            }
+
+            return factor;
+        }
+
+
 
 
         public static bool QueenExistsOnMap(Map map)

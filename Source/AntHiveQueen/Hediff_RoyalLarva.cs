@@ -12,45 +12,51 @@ namespace AntiniumHiveQueen
     {
         public override void Tick ()
         {
+            long ageIncr = 0;
             switch(CurStageIndex)
             {
-
                 case 0:
-                    pawn.ageTracker.AgeBiologicalTicks += (long)15;
+                    ageIncr = 6;
                     break;
                 case 1:
-                    pawn.ageTracker.AgeBiologicalTicks += (long)25;
+                    ageIncr = 12;
                     break;
                 case 2:
-                    pawn.ageTracker.AgeBiologicalTicks += (long)40;
+                    ageIncr = 18;
                     break;
                 case 3:
-                    pawn.ageTracker.AgeBiologicalTicks += (long)60;
+                    ageIncr = 24;
                     break;
 
+
                 //case 0:
-                //    pawn.ageTracker.AgeBiologicalTicks += (long)25;
+                //    ageIncr = 15;
                 //    break;
                 //case 1:
-                //    pawn.ageTracker.AgeBiologicalTicks += (long)50;
+                //    ageIncr = 25;
                 //    break;
                 //case 2:
-                //    pawn.ageTracker.AgeBiologicalTicks += (long)70;
+                //    ageIncr = 40;
                 //    break;
                 //case 3:
-                //    pawn.ageTracker.AgeBiologicalTicks += (long)95;
+                //    ageIncr = 60;
                 //    break;
 
                 default:
                     break;
             }
 
-            if(pawn.ageTracker.AgeBiologicalYears >= 20)
-            {
-                // TODO: Add adult backstory!
 
-                this.Severity = 0;
-            }
+            pawn.ageTracker.AgeBiologicalTicks += ageIncr;
+
+            //commented out to see where it ends naturallys
+
+            //if (pawn.ageTracker.AgeBiologicalYears >= 20)
+            //{
+            //    // TODO: Add adult backstory!
+
+            //    this.Severity = 0;
+            //}
         }
     }
 }
