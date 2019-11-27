@@ -547,7 +547,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>KnowColonistOrganHarvested</defName>
+		<defName>Ant_KnowColonistOrganHarvested</defName>
 		<durationDays>9</durationDays>
 		<stackLimit>5</stackLimit>
 		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>

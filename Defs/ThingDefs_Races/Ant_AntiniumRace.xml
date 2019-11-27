@@ -202,32 +202,21 @@
 				<!--AteInsectMeatDirect-->	
 				<!--AteInsectMeatAsIngredient-->	
 		<!--outdoors and room size-->		
-				<li>
-                    <original>NeedRoomSize</original>
-                    <replacer>Ant_NeedRoomSize</replacer> 
-                </li>
+
 				<li>
                     <original>NeedOutdoors</original>
                     <replacer>Ant_NeedOutdoors</replacer> 
                 </li>
 		<!--bedroom and barracks-->
-				<li>
-                    <original>SleptInBedroom</original>
-                    <replacer>Ant_SleptInBedroom</replacer> 
-                </li>
-				<li>
-                    <original>SleptInBarracks</original>
-                    <replacer>Ant_SleptInBarracks</replacer> 
-                </li>
-		<!-- prison cells & barracks-->
-				<li>
-                    <original>PrisonCell</original>
-                    <replacer>Ant_PrisonCell</replacer> 
-                </li>
-				<li>
-                    <original>PrisonBarracks</original>
-                    <replacer>Ant_PrisonBarracks</replacer> 
-                </li>
+		<!--		<li>											-->
+        <!--            <original>SleptInBedroom</original>			-->
+        <!--            <replacer>Ant_SleptInBedroom</replacer> 	-->
+        <!--        </li>											-->
+		<!--		<li>											-->
+        <!--            <original>SleptInBarracks</original>		-->
+        <!--            <replacer>Ant_SleptInBarracks</replacer> 	-->
+        <!--        </li>											-->
+
 		<!--death-->		
 				<li>
                     <original>KnowGuestExecuted</original>
@@ -302,8 +291,13 @@
                     <replacer>Ant_KnowPrisonerSold</replacer> 
                 </li>
 				
+		<!--TEST STUFF GOES HERE-->
+
+				
             </replacerList>
+			
 			<cannotReceiveThoughts>
+
 				<li>Naked</li>
 				<li>EnvironmentDark</li>
 				<li>DeadMansApparel</li>
@@ -317,16 +311,31 @@
 				<li>SleepDisturbed</li>
 				<li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-				
-				<li>Ant_OtherQueenMood</li>
+
+        <li>PrisonBarracks</li>
+        <li>NeedRoomSize</li>
+        <li>PrisonCell</li>
+        <li>NeedOutdoors</li>
+
+			<!-- opinion thoughts -->
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+				<li>AteRawHumanlikeMeat</li>				
+
+        <li>Ant_OtherQueenMood</li>
 			</cannotReceiveThoughts>
 			
 			<restrictedThoughts>
-                <li>Ant_AntQueenMood</li>
-            </restrictedThoughts>
-			
-        </thoughtSettings>
-        <relationSettings>
+				<li>Ant_PrisonBarracks</li>
+				<li>Ant_NeedRoomSize</li>
+				<li>Ant_PrisonCell</li>
+				<li>Ant_NeedOutdoors</li>
+        <li>Ant_AntQueenMood</li>
+			</restrictedThoughts>
+
+      </thoughtSettings>
+        
+		
+		<relationSettings>
 
         </relationSettings>
         <raceRestriction>
@@ -567,4 +576,34 @@
 
 </AlienRace.ThingDef_AlienRace>
 
+
+
+<AlienRace.RaceSettings>
+  <defName>Ant_RaceSettings</defName>
+  <pawnKindSettings>
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>Antinium</li>
+          </kindDefs>
+          <chance>20.0</chance>
+        </li>
+      </alienslavekinds>
+	  
+      <alienrefugeekinds>
+        <li>
+          <kindDefs>
+            <li>Antinium</li>
+			<li>Ant_Combatant</li>
+			<li>Ant_Bowman</li>
+          </kindDefs>
+          <chance>15.0</chance>
+        </li>
+      </alienrefugeekinds>
+
+  </pawnKindSettings>
+</AlienRace.RaceSettings>
+
+
  </Defs>
+ 
