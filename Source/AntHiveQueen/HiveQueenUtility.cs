@@ -65,14 +65,14 @@ namespace AntiniumHiveQueen
 
 
 
-        // general sensitivity to queen effects, 0-4
+        // general sensitivity to queen effects
         public static int GetPawnHQScore(Pawn pawn, bool antsOnly = false, bool reqForAnts = true)
         {
-            int factor = 0;
+            int factor = -1;
 
             if (antsOnly && !(pawn.kindDef.race.defName == "Ant_AntiniumRace"))
             {
-                return 0;
+                return -1;
             }
 
 
@@ -106,10 +106,10 @@ namespace AntiniumHiveQueen
                 factor += 1;
             }
 
-            // Min 1 pt for ants, if req.
+            // Min 0 pt for ants, if req.
             if (reqForAnts && pawn.kindDef.race.defName == "Ant_AntiniumRace")
             {
-                factor = Math.Max(factor, 1);
+                factor = Math.Max(factor, 0);
             }
 
             return factor;

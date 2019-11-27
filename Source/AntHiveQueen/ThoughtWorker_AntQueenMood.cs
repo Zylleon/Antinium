@@ -32,15 +32,9 @@ namespace AntiniumHiveQueen
 
                 if (!queen.Dead && queen.IsColonistPlayerControlled)
                 {
-                   
-
-
 
                     if (directRelations[i].def == relation)
                     {
-                        //return ThoughtState.ActiveAtStage(Math.Min(birds - 1, 4));
-
-                        //queen = directRelations[i].otherPawn;
 
                         float mood = queen.needs.mood.CurLevel;
 
@@ -59,7 +53,7 @@ namespace AntiniumHiveQueen
                             return ThoughtState.ActiveAtStage(2);
                         }
 
-                        if (mood > .25)
+                        if (mood > .75)
                         {
                             return ThoughtState.ActiveAtStage(3);
                         }

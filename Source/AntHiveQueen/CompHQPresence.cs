@@ -15,7 +15,7 @@ namespace AntiniumHiveQueen
         {
             get
             {
-                int maturity = 0;
+                int maturity = -2;
 
                 // age
                 int age = 0;
@@ -24,15 +24,15 @@ namespace AntiniumHiveQueen
 
                 if (age < 14)
                 {
-                    maturity = 0;
+                    maturity = -2;
                 }
                 else if (age < 20)
                 {
-                    maturity = 1;
+                    maturity = -1;
                 }
                 else
                 {
-                    maturity = 2;
+                    maturity = 0;
                 }
 
                 // time at the colony
@@ -53,15 +53,12 @@ namespace AntiniumHiveQueen
                     maturity++;
                 }
 
+                if (time >= 3600000 * 5)
+                {
+                    maturity++;
+                }
                 return maturity;
             }
-
-
-
-            //get
-            //{
-            //    return this.queenMaturity;
-            //}
         }
 
 
@@ -82,7 +79,6 @@ namespace AntiniumHiveQueen
                 Pawn pawn = this.parent as Pawn;
 
                 // health
-
                 if (pawn.Downed || pawn.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness) < .6)
                 {
                     strength /= 2;
@@ -92,6 +88,12 @@ namespace AntiniumHiveQueen
                 if (pawn.health.hediffSet.hediffs.Any(h => h.CurStage != null && h.CurStage.lifeThreatening && !h.FullyImmune()))
                 {
                     strength--;
+                }
+
+                //happiness
+                if(pawn.needs.mood.CurLevel > .85)
+                {
+                    strength++;
                 }
 
                 return strength;
@@ -120,8 +122,6 @@ namespace AntiniumHiveQueen
                     // to spread this out a bit
                     if (Find.TickManager.TicksGame % 3803 == 0)
                     {
-                        Log.Message("Queen Maturity: " + QueenMaturity);
-                        Log.Message("Queen Strength: " + QueenStrength);
                         ApplyQueenRelation(pawn);
 
                         ApplyQueenHediff(pawn.Map);
@@ -165,14 +165,24 @@ namespace AntiniumHiveQueen
         private void ApplyQueenHediff(Map map)
         {
             List<Pawn> colonists = map.mapPawns.FreeColonists.ToList();
-            for (int i = 0; i < colonists.Count; i++)
+            Pawn queen = this.parent as Pawn;
+
+            foreach (Pawn c in colonists.Where(p => p != queen))
             {
-                Pawn pawn = colonists[i];
-                if (pawn.RaceProps.Humanlike)
+                //Pawn pawn = colonists[i];
+                if (c.RaceProps.Humanlike)
                 {
-                    SetQueenHediffSeverity(pawn);
+                    SetQueenHediffSeverity(c);
                 }
             }
+            //for (int i = 0; i < colonists.Count; i++)
+            //{
+            //    Pawn pawn = colonists[i];
+            //    if (pawn.RaceProps.Humanlike)
+            //    {
+            //        SetQueenHediffSeverity(pawn);
+            //    }
+            //}
         }
 
 
@@ -180,19 +190,26 @@ namespace AntiniumHiveQueen
         {
             float severity = 0f;
 
-            int score = 0;
+            int score = -1;
 
-            score = HiveQueenUtility.GetPawnHQScore(pawn) + this.QueenStrength;
-            Log.Message("Pawn: " + pawn.Name);
-            Log.Message("Score: " + HiveQueenUtility.GetPawnHQScore(pawn));
-            severity = score / 10f;
+            score = HiveQueenUtility.GetPawnHQScore(pawn);
 
-            severity = Math.Min(severity, 1f);
-            severity = Math.Max(severity, 0f);
+            if (score < 0)
+            {
+                score *= 2;
+            }
 
-            Log.Message("Pawn: " + pawn.Name);
-            Log.Message("Severity: " + severity);
-            // severity = HiveQueenUtility.GetPawnHQFactor(pawn);
+            score += QueenStrength;
+
+            if(score > 0)
+            {
+                severity = score * .1f;
+                severity = Math.Min(severity, 1f);
+            }
+            else
+            {
+                severity = 0f;
+            }
 
             // do hediff
             Hediff olddiff = pawn.health.hediffSet.GetFirstHediffOfDef(AntHQDefOf.Ant_HiveQueenInspHediff, false);
