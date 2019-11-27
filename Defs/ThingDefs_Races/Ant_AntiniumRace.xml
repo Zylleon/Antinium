@@ -66,7 +66,14 @@
 				<li>Narrow_Normal</li>
 				<li>Narrow_Wide</li>
 				</aliencrowntypes>
+				
 				<useGenderedHeads>false</useGenderedHeads>
+				<alienbodytypes>
+					<li>Hulk</li>
+					<li>Thin</li>
+					<li>Male</li>
+					<li>Female</li>
+				</alienbodytypes>
 				<alienskincolorgen Class="ColorGenerator_Options">
                 <options>
 				<!-- reddish -->
@@ -142,7 +149,7 @@
 			<chemicalSettings>
 
             </chemicalSettings>
-	<!--TODO: forced traits? Possibly by gender -->
+
 			<disallowedTraits>
                <li>Cannibal</li>
 			   <li>Greedy</li>
@@ -156,8 +163,19 @@
         <graphicPaths>
 			<li>
 				<head>Antinium/Head/</head>
-				<skull>Antinium/Skull/Skull</skull>
+				<!--<skull>Antinium/Skull/</skull>-->
 			</li>
+			<li>
+                <lifeStageDefs>
+                    <li>HumanlikeBaby</li>
+					<li>HumanlikeToddler</li>
+					<li>HumanlikeChild</li>
+                </lifeStageDefs>
+                <body>Antinium/Larva/</body>
+                <head />
+                <skeleton>Antinium/DessicatedLarva/DessicatedLarva</skeleton>
+                <skull/>
+            </li>
         </graphicPaths>
         <hairSettings>
 			<hasHair>false</hasHair>
@@ -293,16 +311,17 @@
 				<li>SleepDisturbed</li>
 				<li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-				
+
+        <li>PrisonBarracks</li>
+        <li>NeedRoomSize</li>
+        <li>PrisonCell</li>
+        <li>NeedOutdoors</li>
+
 			<!-- opinion thoughts -->
 				<li>ButcheredHumanlikeCorpseOpinion</li>
 				<li>AteRawHumanlikeMeat</li>				
-				
-				<li>PrisonBarracks</li>
-				<li>NeedRoomSize</li>
-				<li>PrisonCell</li>
-				<li>NeedOutdoors</li>
 
+        <li>Ant_OtherQueenMood</li>
 			</cannotReceiveThoughts>
 			
 			<restrictedThoughts>
@@ -310,9 +329,10 @@
 				<li>Ant_NeedRoomSize</li>
 				<li>Ant_PrisonCell</li>
 				<li>Ant_NeedOutdoors</li>
+        <li>Ant_AntQueenMood</li>
 			</restrictedThoughts>
 
-        </thoughtSettings>
+      </thoughtSettings>
         
 		
 		<relationSettings>
@@ -321,6 +341,19 @@
         <raceRestriction>
 			<traitList>
                 <li>Ant_BirdLover</li>
+				<li>Ant_GenTwoSoldier</li>
+				<li>Ant_GenTwoFarmer</li>
+				<li>Ant_GenTwoDigger</li>
+				<li>Ant_GenTwoEmpath</li>
+				<li>Ant_GenTwoTunnelGuardian</li>
+				<li>Ant_GenTwoArtisan</li>
+				<li>Ant_GenTwoArchitect</li>
+				<li>Ant_GenTwoMountaineer</li>
+				<li>Ant_GenTwoWarden</li>
+				<li>Ant_GenTwoMadScientist</li>
+				<li>Ant_GenTwoPatrol</li>
+				<li>Ant_GenTwoNurturing</li>
+				<li>Ant_HiveQueenTrait</li>
             </traitList>
 			
 			<researchList>
@@ -429,6 +462,9 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<comps>
+      <li Class="AntiniumHiveQueen.CompProperties_HQPresence"></li>
+    </comps>
     <race>
 	  <nameGenerator>NamerPersonAntinium</nameGenerator>
       <thinkTreeMain>Humanlike</thinkTreeMain>

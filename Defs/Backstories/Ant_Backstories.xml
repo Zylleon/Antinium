@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
 <AlienRace.BackstoryDef>
     <defName>Ant_SilentAntinium</defName>
     <title>Silent Antinium</title>
@@ -43,6 +44,19 @@
         <li>
             <defName>Kind</defName>
         </li>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -97,6 +111,19 @@
 		<li>
             <defName>Wimp</defName>
         </li>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -138,6 +165,21 @@
             <chance>40</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -180,6 +222,21 @@
             <chance>40</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -230,7 +287,20 @@
         <li>
             <defName>Bloodlust</defName>
         </li>
-    </disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -272,6 +342,21 @@
 			<chance>20</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -312,6 +397,19 @@
         <li>
             <defName>Wimp</defName>
         </li>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -343,6 +441,21 @@
         <amount>-3</amount>
       </li>
     </skillGains>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -369,6 +482,21 @@
         <amount>4</amount>
       </li>
     </skillGains>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 <AlienRace.BackstoryDef>
@@ -412,6 +540,19 @@
             <defName>PsychicSensitivity</defName>
 			<degree>-2</degree>
         </li>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -450,6 +591,19 @@
         <li>
             <defName>Wimp</defName>
         </li>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -490,6 +644,21 @@
             <chance>35</chance>
         </li>
     </forcedTraits>
+	<disallowedTraits>
+		<li><defName>Ant_GenTwoSoldier</defName></li>
+		<li><defName>Ant_GenTwoFarmer</defName></li>
+		<li><defName>Ant_GenTwoDigger</defName></li>
+		<li><defName>Ant_GenTwoEmpath</defName></li>
+		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
+		<li><defName>Ant_GenTwoArtisan</defName></li>
+		<li><defName>Ant_GenTwoArchitect</defName></li>
+		<li><defName>Ant_GenTwoMountaineer</defName></li>
+		<li><defName>Ant_GenTwoWarden</defName></li>
+		<li><defName>Ant_GenTwoMadScientist</defName></li>
+		<li><defName>Ant_GenTwoPatrol</defName></li>
+		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_HiveQueenTrait</defName></li>
+	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
 </Defs>

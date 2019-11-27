@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Queen -->
+
+  <TraitDef>
+    <defName>Ant_HiveQueenTrait</defName>
+    <commonality>0</commonality>
+    <commonalityFemale>1</commonalityFemale>
+    <degreeDatas>
+      <li>
+        <label>hive queen</label>
+        <description>{PAWN_nameDef} was born to rule.</description>
+		<statOffsets>
+          <MoveSpeed>-0.2</MoveSpeed>
+		  <HungerRateMultiplier>0.30</HungerRateMultiplier>
+		  <WorkSpeedGlobal>-0.30</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+
+<!-- GenTwo Antinium -->
+
+ <TraitDef>
+    <defName>Ant_GenTwoSoldier</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium soldier</label>
+        <description>{PAWN_nameDef} was created to be a soldier</description>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <PainShockThreshold>0.15</PainShockThreshold>
+		  <MeleeDodgeChance>15</MeleeDodgeChance>
+		  <CarryingCapacity>15</CarryingCapacity>
+		  <UnskilledLaborSpeed>.15</UnskilledLaborSpeed>
+		  <MoveSpeed>0.4</MoveSpeed>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+		
+  </TraitDef>
+
+
+ <TraitDef>
+    <defName>Ant_GenTwoFarmer</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium farmer</label>
+        <description>{PAWN_nameDef} was created to be a farmer</description>
+        <statOffsets>
+          <TameAnimalChance>.10</TameAnimalChance>
+		  <TrainAnimalChance>.10</TrainAnimalChance>
+		  <PlantWorkSpeed>.15</PlantWorkSpeed>
+		  <PlantHarvestYield>.2</PlantHarvestYield>
+		  <TradePriceImprovement>.07</TradePriceImprovement>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+		
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Ant_GenTwoDigger</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium digger</label>
+        <description>{PAWN_nameDef} is an antinium digger</description>
+        <statOffsets>
+		  <MiningSpeed>.15</MiningSpeed>
+		  <MiningYield>.15</MiningYield>
+		  <UnskilledLaborSpeed>1.15</UnskilledLaborSpeed>
+		  <SmoothingSpeed>.1</SmoothingSpeed>
+		  <PlantWorkSpeed>.15</PlantWorkSpeed>
+		  <MeleeDodgeChance>10</MeleeDodgeChance>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Ant_GenTwoEmpath</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium empath</label>
+        <description>{PAWN_nameDef} is an antinium empath</description>
+        <statOffsets>
+		  <PsychicSensitivity>0.5</PsychicSensitivity>
+		  <TameAnimalChance>.20</TameAnimalChance>
+		  <TrainAnimalChance>.15</TrainAnimalChance>
+	  	  <NegotiationAbility>.20</NegotiationAbility>
+		  <TradePriceImprovement>.15</TradePriceImprovement>
+		  <SocialImpact>.15</SocialImpact>
+		  <SculptingSpeed>.1</SculptingSpeed>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+   
+  <TraitDef>
+    <defName>Ant_GenTwoTunnelGuardian</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium tunnel guardian</label>
+        <description>{PAWN_nameDef} is an antinium tunnel guardian</description>
+        <statOffsets>
+		  <MiningSpeed>.15</MiningSpeed>
+		  <MiningYield>.15</MiningYield>
+		  <MedicalTendSpeed>.15</MedicalTendSpeed>
+	  	  <MedicalTendQuality>.10</MedicalTendQuality>
+		  <MeleeDodgeChance>15</MeleeDodgeChance>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+  
+<TraitDef>
+    <defName>Ant_GenTwoArtisan</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium artisan</label>
+        <description>{PAWN_nameDef} is an antinium artisan, built to work with his hands</description>
+        <statOffsets>
+		  <SculptingSpeed>.15</SculptingSpeed>
+		  <TailoringSpeed>.15</TailoringSpeed>
+		  <SmithingSpeed>.15</SmithingSpeed>
+		  <ButcheryMechanoidEfficiency>.10</ButcheryMechanoidEfficiency>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>Ant_GenTwoArchitect</defName>
+    <degreeDatas>
+    <li>
+        <label>antinium architect</label>
+        <description>{PAWN_nameDef} is an antinium architect, creating and building stuff.</description>
+        <statOffsets>
+		  <ConstructionSpeed>.15</ConstructionSpeed>
+		  <SmoothingSpeed>.10</SmoothingSpeed>
+		  <ConstructSuccessChance>.15</ConstructSuccessChance>
+		  <FixBrokenDownBuildingSuccessChance>.10</FixBrokenDownBuildingSuccessChance>
+		  <ResearchSpeed>.05</ResearchSpeed>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+    <TraitDef>
+    <defName>Ant_GenTwoMountaineer</defName>
+    <degreeDatas>
+    <li>
+        <label>mountaineer</label>
+        <description>{PAWN_nameDef} is a mountaineer.</description>
+        <statOffsets>
+		  <MiningSpeed>.15</MiningSpeed>
+		  <CookSpeed>.10</CookSpeed>
+		  <FoodPoisonChance>-.10</FoodPoisonChance>
+		  <AimingDelayFactor>-.30</AimingDelayFactor>
+		  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+          </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+   
+   <TraitDef>
+    <defName>Ant_GenTwoWarden</defName>
+    <degreeDatas>
+    <li>
+        <label>warden</label>
+        <description>{PAWN_nameDef} is a warden.</description>
+        <statOffsets>
+		  <SocialImpact>.20</SocialImpact>
+		  <TradePriceImprovement>.10</TradePriceImprovement>
+		  <MedicalTendSpeed>.20</MedicalTendSpeed>
+	  	  <MedicalSurgerySuccessChance>.10</MedicalSurgerySuccessChance>
+		  <MeleeHitChance>5</MeleeHitChance>
+		  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+   <TraitDef>
+    <defName>Ant_GenTwoMadScientist</defName>
+    <degreeDatas>
+    <li>
+        <label>Geneticist</label>
+        <description>{PAWN_nameDef} is a geneticist.</description>
+        <statOffsets>
+		  <ResearchSpeed>.10</ResearchSpeed>
+		  <MedicalOperationSpeed>.15</MedicalOperationSpeed>
+		  <MedicalSurgerySuccessChance>.15</MedicalSurgerySuccessChance>
+		  <DrugSynthesisSpeed>.10</DrugSynthesisSpeed>
+	  	  <ButcheryFleshSpeed>.10</ButcheryFleshSpeed>
+		  <ButcheryFleshEfficiency>.15</ButcheryFleshEfficiency>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+     <TraitDef>
+    <defName>Ant_GenTwoPatrol</defName>
+    <degreeDatas>
+    <li>
+        <label>Patrol</label>
+        <description>{PAWN_nameDef} is a patrol.</description>
+        <statOffsets>
+		  <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+		  <AimingDelayFactor>-.20</AimingDelayFactor>
+		  <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+		  <ConstructionSpeed>.20</ConstructionSpeed>
+		  <ConstructSuccessChance>.10</ConstructSuccessChance>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+    <TraitDef>
+    <defName>Ant_GenTwoNurturing</defName>
+    <degreeDatas>
+    <li>
+        <label>Nurturing</label>
+        <description>{PAWN_nameDef} has a nurturing nature.</description>
+        <statOffsets>
+		  <NegotiationAbility>.10</NegotiationAbility>
+		  <TradePriceImprovement>.10</TradePriceImprovement>
+		  <SocialImpact>.2</SocialImpact>
+		  <PlantWorkSpeed>.1</PlantWorkSpeed>
+		  <PlantHarvestYield>.2</PlantHarvestYield>
+        </statOffsets>
+	</li>
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>

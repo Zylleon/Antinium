@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\obj\Debug\AntiniumHiveQueen.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\obj\Debug\AntiniumHiveQueen.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\bin\Debug\AntiniumHiveQueen.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\bin\Debug\AntiniumHiveQueen.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\obj\Debug\AntiniumHiveQueen.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntHiveQueen\obj\Debug\AntiniumHiveQueen.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Assemblies\AntiniumHiveQueen.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Assemblies\AntiniumHiveQueen.pdb
