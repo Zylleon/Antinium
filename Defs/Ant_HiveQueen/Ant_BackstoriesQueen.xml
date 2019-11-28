@@ -23,6 +23,18 @@
     </forcedTraits>
 	<maleCommonality>0</maleCommonality>
 	<femaleCommonality>100</femaleCommonality>
+	<relationSettings>
+		<relationChanceModifierLover>0</relationChanceModifierLover>
+		<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+		<relationChanceModifierFiance>0</relationChanceModifierFiance>
+		<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+		<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+		<relationChanceModifierParent>0</relationChanceModifierParent>
+		<relationChanceModifierChild>0</relationChanceModifierChild>
+		<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    </relationSettings>
 	<disallowedTraits>
 		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
@@ -54,6 +66,18 @@
     </spawnCategories>
 	<maleCommonality>0</maleCommonality>
 	<femaleCommonality>100</femaleCommonality>
+	<relationSettings>
+		<relationChanceModifierLover>0</relationChanceModifierLover>
+		<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+		<relationChanceModifierFiance>0</relationChanceModifierFiance>
+		<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+		<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+		<relationChanceModifierParent>0</relationChanceModifierParent>
+		<relationChanceModifierChild>0</relationChanceModifierChild>
+		<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    </relationSettings>
 	<workAllows>
         <li>Social</li>
 		<li>Caring</li>

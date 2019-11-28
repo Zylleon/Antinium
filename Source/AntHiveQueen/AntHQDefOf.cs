@@ -27,7 +27,7 @@ namespace AntiniumHiveQueen
 
         public static HediffDef Ant_RoyalLarvaHediff;
 
-        //public static GameCondition GameCondition_HiveQueen;
+        // public static GameCondition GameCondition_HiveQueen;
         // public static GameCondition GameCondition_HiveQueenDied;
 
     }
