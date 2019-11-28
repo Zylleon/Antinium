@@ -70,14 +70,11 @@ namespace AntiniumHiveQueen
             for (int i = 0; i < list.Count(); i++)
             {
                 Pawn pawn = list[i];
-                Log.Message("Possible queen: " + pawn.Name);
-
                 CompHQPresence comp = pawn.TryGetComp<CompHQPresence>();
                 if (comp != null)
                 {
                     if (comp.Active)
                     {
-                        Log.Message("Queen found: " + pawn.Name);
                         return true;
                     }
                 }
@@ -85,6 +82,27 @@ namespace AntiniumHiveQueen
 
             return false;
         }
+
+        public static bool QueenExists()
+        {
+            List<Pawn> list = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_OfPlayerFaction.ToList();
+
+            for (int i = 0; i < list.Count(); i++)
+            {
+                Pawn pawn = list[i];
+                CompHQPresence comp = pawn.TryGetComp<CompHQPresence>();
+                if (comp != null)
+                {
+                    if (comp.Active)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
 
 
         //returns max if there are multiple queens

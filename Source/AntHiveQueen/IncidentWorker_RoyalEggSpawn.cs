@@ -28,7 +28,7 @@ namespace AntiniumHiveQueen
             {
                 return false;
             }
-            if (HiveQueenUtility.QueenExistsOnMap(map))
+            if (HiveQueenUtility.QueenExists())
             {
                 return false;
             }
