@@ -13,19 +13,13 @@ namespace AntiniumHiveQueen
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            GameConditionDef hiveQueen = DefDatabase<GameConditionDef>.GetNamed("GameCondition_HiveQueen");
-            GameConditionDef hiveQueenDied = DefDatabase<GameConditionDef>.GetNamed("GameCondition_HiveQueenDied");
-
             Map map = (Map)parms.target;
 
             if (map.mapTemperature.OutdoorTemp <= -5 || map.mapTemperature.OutdoorTemp >= 50)
             {
                 return false;
             }
-            if (map.gameConditionManager.ConditionIsActive(hiveQueen) || map.gameConditionManager.ConditionIsActive(hiveQueenDied))
-            {
-                return false;
-            }
+
             if (map.mapPawns.FreeColonistsCount < 7)
             {
                 return false;
@@ -34,14 +28,12 @@ namespace AntiniumHiveQueen
             {
                 return false;
             }
-
-            //return !map.gameConditionManager.ConditionIsActive(hiveQueen)
-            //    && !map.gameConditionManager.ConditionIsActive(hiveQueenDied)
-            //    && map.mapPawns.FreeColonistsCount <= 7
-            //    && map.mapPawns.FreeHumanlikesOfFaction(Faction.OfPlayer).Where(p => p.kindDef.race.defName == "Ant_AntiniumRace").Count() <= 4;
+            if (HiveQueenUtility.QueenExistsOnMap(map))
+            {
+                return false;
+            }
 
             return true;
-
         }
 
 
@@ -57,6 +49,7 @@ namespace AntiniumHiveQueen
 
         private Thing SpawnRoyalEgg(Map map)
         {
+
             IntVec3 loc;
             if (!TryFindCell(out loc, map))
             {

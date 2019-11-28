@@ -10,12 +10,12 @@ namespace AntiniumHiveQueen
 {
     public class CompHQPresence : ThingComp
     {
-        // from 0 to 5
+
         public int QueenMaturity
         {
             get
             {
-                int maturity = -2;
+                int maturity = 0;
 
                 // age
                 int age = 0;
@@ -24,15 +24,15 @@ namespace AntiniumHiveQueen
 
                 if (age < 14)
                 {
-                    maturity = -2;
+                    maturity = 0;
                 }
                 else if (age < 20)
                 {
-                    maturity = -1;
+                    maturity = 1;
                 }
                 else
                 {
-                    maturity = 0;
+                    maturity = 2;
                 }
 
                 // time at the colony
@@ -100,8 +100,9 @@ namespace AntiniumHiveQueen
             }
         }
 
+        public bool Active { get { return this.active; } }
 
-        private bool Active
+        private bool active
         {
             get
             {
@@ -114,12 +115,11 @@ namespace AntiniumHiveQueen
 
         public override void CompTick()
         {
-            if (this.Active)
+            if (this.active)
             {
                 Pawn pawn = this.parent as Pawn;
                 if (pawn != null)
                 {
-                    // to spread this out a bit
                     if (Find.TickManager.TicksGame % 3803 == 0)
                     {
                         ApplyQueenRelation(pawn);

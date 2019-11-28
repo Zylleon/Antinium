@@ -13,7 +13,7 @@
     <workerClass>AntiniumHiveQueen.IncidentWorker_RoyalEggSpawn</workerClass>
     <baseChance>0</baseChance> <!-- Manual fire only -->
     <minRefireDays>70</minRefireDays>
-	<earliestDay>130</earliestDay>
+	<earliestDay>80</earliestDay>
   </IncidentDef>
   
   

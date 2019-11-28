@@ -10,60 +10,6 @@ namespace AntiniumHiveQueen
 {
     public static class HiveQueenUtility
     {
-        // general sensitivity to Q effects, 0-1
-        public static float GetPawnHQFactor(Pawn pawn, bool antsOnly = false, bool reqForAnts = true)
-        {
-            float factor = 0f;
-
-            if (antsOnly && !(pawn.kindDef.race.defName == "Ant_AntiniumRace"))
-            {
-                return 0f;
-            }
-
-            
-            // default increase for ants
-            if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
-            {
-                factor = .5f;
-            }
-
-
-            // psychic sensitivity
-            float hyper = pawn.GetStatValue(StatDefOf.PsychicSensitivity, true);
-
-            factor += (hyper - 1) * 0.5f;
-
-
-            //if (hyper <= .3)
-            //{
-            //    factor -= .35f;
-            //}
-
-            //else if (hyper <= .6)
-            //{
-            //    factor -= .15f;
-            //}
-
-            //if (hyper >= 1.7)
-            //{
-            //    factor += .35f;
-            //}
-
-            //else if (hyper >= 1.3)
-            //{
-            //    factor += .15f;
-            //}
-
-            // Min 5 pct for ants, if req.
-            if (reqForAnts && pawn.kindDef.race.defName == "Ant_AntiniumRace")
-            {
-                factor = Math.Max(factor, 0.05f);
-            }
-
-            return factor;
-        }
-
-
 
         // general sensitivity to queen effects
         public static int GetPawnHQScore(Pawn pawn, bool antsOnly = false, bool reqForAnts = true)
@@ -74,7 +20,6 @@ namespace AntiniumHiveQueen
             {
                 return -1;
             }
-
 
             // default increase for ants
             if (pawn.kindDef.race.defName == "Ant_AntiniumRace")
@@ -120,11 +65,22 @@ namespace AntiniumHiveQueen
 
         public static bool QueenExistsOnMap(Map map)
         {
-
-            if( map.mapPawns.PawnsInFaction(Faction.OfPlayer).Any(p => p.TryGetComp<CompHQPresence>() != null))
+            List<Pawn> list = map.mapPawns.PawnsInFaction(Faction.OfPlayer).Where(p => p.RaceProps.Humanlike).ToList();
+            
+            for (int i = 0; i < list.Count(); i++)
             {
-                // doesn't check if she's downed, in cryptosleep, etc
-                return true;
+                Pawn pawn = list[i];
+                Log.Message("Possible queen: " + pawn.Name);
+
+                CompHQPresence comp = pawn.TryGetComp<CompHQPresence>();
+                if (comp != null)
+                {
+                    if (comp.Active)
+                    {
+                        Log.Message("Queen found: " + pawn.Name);
+                        return true;
+                    }
+                }
             }
 
             return false;

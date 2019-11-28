@@ -311,17 +311,16 @@
 				<li>SleepDisturbed</li>
 				<li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-
-        <li>PrisonBarracks</li>
-        <li>NeedRoomSize</li>
-        <li>PrisonCell</li>
-        <li>NeedOutdoors</li>
+				<li>PrisonBarracks</li>
+				<li>NeedRoomSize</li>
+				<li>PrisonCell</li>
+				<li>NeedOutdoors</li>
 
 			<!-- opinion thoughts -->
 				<li>ButcheredHumanlikeCorpseOpinion</li>
 				<li>AteRawHumanlikeMeat</li>				
 
-        <li>Ant_OtherQueenMood</li>
+				<li>Ant_OtherQueenMood</li>
 			</cannotReceiveThoughts>
 			
 			<restrictedThoughts>
@@ -329,7 +328,7 @@
 				<li>Ant_NeedRoomSize</li>
 				<li>Ant_PrisonCell</li>
 				<li>Ant_NeedOutdoors</li>
-        <li>Ant_AntQueenMood</li>
+				<li>Ant_AntQueenMood</li>
 			</restrictedThoughts>
 
       </thoughtSettings>
