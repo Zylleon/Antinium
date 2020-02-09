@@ -15,16 +15,16 @@ namespace AntiniumHiveQueen
         {
             Map map = (Map)parms.target;
 
-            if (map.mapTemperature.OutdoorTemp <= -5 || map.mapTemperature.OutdoorTemp >= 50)
+            if (map.mapTemperature.OutdoorTemp <= -10 || map.mapTemperature.OutdoorTemp >= 50)
             {
                 return false;
             }
 
-            if (map.mapPawns.FreeColonistsCount < 7)
+            if (map.mapPawns.FreeColonistsCount < 6)
             {
                 return false;
             }
-            if (map.mapPawns.FreeHumanlikesOfFaction(Faction.OfPlayer).Where(p => p.kindDef?.race?.defName == "Ant_AntiniumRace").Count() < 4)
+            if (map.mapPawns.FreeHumanlikesOfFaction(Faction.OfPlayer).Where(p => p.kindDef?.race?.defName == "Ant_AntiniumRace").Count() < 3)
             {
                 return false;
             }

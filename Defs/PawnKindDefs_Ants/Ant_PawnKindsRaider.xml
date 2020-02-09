@@ -20,10 +20,10 @@
 
   <!-- light infantry - naked, unarmed melee -->
 
-  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind"> 	<!--  15-Resource: naked + unarmed -->
+  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind"> 	<!--  20-Resource: naked + unarmed -->
     <defName>Ant_CannonFodder</defName>
     <label>resource</label>
-    <combatPower>15</combatPower>
+    <combatPower>20</combatPower>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
     <apparelMoney>
@@ -46,10 +46,10 @@
   </PawnKindDef>
   
 <!-- light melee-->
-<PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">  		<!--  25-Combatant: naked + knife/club -->
+<PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">  		<!--  30-Combatant: naked + knife/club -->
     <defName>Ant_Combatant</defName>
     <label>combatant</label>
-    <combatPower>25</combatPower>
+    <combatPower>30</combatPower>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
     <itemQuality>Poor</itemQuality>
@@ -82,7 +82,7 @@
 <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind">  		<!--  50-Soldier: naked + ikwa/mace/gladius -->
     <defName>Ant_Soldier</defName>
     <label>soldier</label>
-    <combatPower>40</combatPower>
+    <combatPower>50</combatPower>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
     <itemQuality>Poor</itemQuality>
@@ -114,10 +114,10 @@
 
 <!-- Mid tier - archer, hunter, trader -->
 
-  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind"> 	<!--  35-Bowman: tribalwear/(parka) + shortbow -->
+  <PawnKindDef ParentName="Ant_AntiniumRaiderBasePawnkind"> 	<!--  40-Bowman: tribalwear/(parka) + shortbow -->
 		<defName>Ant_Bowman</defName>
 		<label>bowman</label>
-    <combatPower>35</combatPower>
+    <combatPower>40</combatPower>
     <itemQuality>Poor</itemQuality>
     <gearHealthRange>
       <min>0.5</min>
