@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Assemblies\AntiniumRaceCode.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\1.1\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\1.1\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\1.1\Source\AntiniumRaceCode\obj\Debug\AntiniumRaceCode.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Z_Antinium\1.1\Assemblies\AntiniumRaceCode.dll
