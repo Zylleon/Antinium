@@ -8,12 +8,11 @@
     <baseDescription>[PAWN_nameDef] was a larva.</baseDescription>
 	<slot>Childhood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>	
 	<maleCommonality>100</maleCommonality>
 	<femaleCommonality>0</femaleCommonality>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>

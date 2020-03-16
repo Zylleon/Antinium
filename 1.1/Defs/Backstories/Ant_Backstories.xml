@@ -10,7 +10,7 @@
 	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -44,7 +44,6 @@
         <li>
             <defName>Kind</defName>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -68,7 +67,7 @@
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -111,7 +110,6 @@
 		<li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -135,7 +133,7 @@
 	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -166,7 +164,6 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -190,7 +187,7 @@
 	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -223,7 +220,6 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -247,7 +243,7 @@
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -287,7 +283,6 @@
         <li>
             <defName>Bloodlust</defName>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -311,7 +306,7 @@
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -343,7 +338,6 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -367,7 +361,7 @@
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -397,7 +391,6 @@
         <li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -421,7 +414,7 @@
 	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -442,7 +435,6 @@
       </li>
     </skillGains>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -466,7 +458,7 @@
 	<bodyTypeGlobal>Male</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -483,7 +475,6 @@
       </li>
     </skillGains>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -507,7 +498,7 @@
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -516,7 +507,7 @@
       </li>
 	  <li>
         <defName>Melee</defName>
-        <amount>5</amount>
+        <amount>2</amount>
       </li>
 	  <li>
         <defName>Mining</defName>
@@ -540,7 +531,6 @@
             <defName>PsychicSensitivity</defName>
 			<degree>-2</degree>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -564,7 +554,7 @@
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -591,7 +581,6 @@
         <li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>
@@ -615,7 +604,7 @@
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<slot>Adulthood</slot>
 	<spawnCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
       <li>
@@ -645,7 +634,6 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>

@@ -7,7 +7,7 @@
     <race>Ant_AntiniumRace</race>
     <defaultFactionType>Ant_HiveCivil</defaultFactionType>
     <backstoryCategories>
-      <li>Ant_AntiniumBackstory</li>
+      <li>Ant_BasicBackstory</li>
     </backstoryCategories>
     <maxGenerationAge>60</maxGenerationAge>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>

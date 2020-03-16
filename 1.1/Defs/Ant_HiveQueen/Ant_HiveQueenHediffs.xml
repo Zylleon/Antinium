@@ -7,6 +7,7 @@
 	<isBad>false</isBad>
 	<everCurableByItem>false</everCurableByItem>
 	<label>Royal Larva</label>
+	<description>Growing quickly, and eating more to feed her rapid growth.</description>
 	<hediffClass>AntiniumHiveQueen.Hediff_RoyalLarva</hediffClass>
 	<comps>
 	  <li Class="HediffCompProperties_SeverityPerDay">
@@ -68,6 +69,7 @@
 	<isBad>false</isBad>
 	<label>royal presence</label>
 	<hediffClass>HediffWithComps</hediffClass>
+	<description>Influenced by the presence of a Hive Queen.</description>
 	<comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>

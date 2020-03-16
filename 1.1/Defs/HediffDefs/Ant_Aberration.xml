@@ -6,6 +6,7 @@
     <defName>Ant_Aberration</defName>
 	<hediffClass>HediffWithComps</hediffClass>
     <label>aberration</label>
+	<description>Aberrations may be dangerous to those around them. Do what you need to do.</description>
 	<stages>
       <li>
         <opinionOfOthersFactor>0</opinionOfOthersFactor>

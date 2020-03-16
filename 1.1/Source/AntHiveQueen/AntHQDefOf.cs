@@ -22,7 +22,7 @@ namespace AntiniumHiveQueen
         public static HediffDef Ant_HiveQueenInspHediff;
         public static ThingDef Ant_RoyalEgg;
 
-        public static FactionDef Ant_GenTwoFaction;
+        //public static FactionDef Ant_GenTwoFaction;
         public static FactionDef Ant_QueenFaction;
 
         public static HediffDef Ant_RoyalLarvaHediff;

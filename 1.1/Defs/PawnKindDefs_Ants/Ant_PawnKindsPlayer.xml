@@ -17,7 +17,7 @@
     <label>antinium</label>
     <defaultFactionType>Ant_AntiniumHivePlayer</defaultFactionType>
     <backstoryCategories>
-			<li>Ant_AntiniumBackstory</li>
+			<li>Ant_BasicBackstory</li>
   	</backstoryCategories>
 	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelTags>

@@ -340,7 +340,6 @@
         <raceRestriction>
 			<traitList>
                 <li>Ant_BirdLover</li>
-				<li>Ant_GenTwoSoldier</li>
 				<li>Ant_GenTwoFarmer</li>
 				<li>Ant_GenTwoDigger</li>
 				<li>Ant_GenTwoEmpath</li>

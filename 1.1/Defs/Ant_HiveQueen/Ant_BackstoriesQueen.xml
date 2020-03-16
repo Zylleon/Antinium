@@ -36,7 +36,6 @@
 		<relationChanceModifierSibling>0</relationChanceModifierSibling>
     </relationSettings>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoSoldier</defName></li>
 		<li><defName>Ant_GenTwoFarmer</defName></li>
 		<li><defName>Ant_GenTwoDigger</defName></li>
 		<li><defName>Ant_GenTwoEmpath</defName></li>

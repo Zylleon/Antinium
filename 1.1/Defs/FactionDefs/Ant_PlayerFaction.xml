@@ -20,7 +20,7 @@
 		<factionNameMaker>Ant_NamerFactionAntinium</factionNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryCategories>
-		<li>Ant_AntiniumBackstory</li>
+		<li>Ant_BasicBackstory</li>
   	</backstoryCategories>
 	<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
     <factionIconPath>Misc/PlayerHive</factionIconPath>
