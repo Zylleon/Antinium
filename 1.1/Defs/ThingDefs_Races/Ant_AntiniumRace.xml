@@ -340,17 +340,17 @@
         <raceRestriction>
 			<traitList>
                 <li>Ant_BirdLover</li>
-				<li>Ant_GenTwoFarmer</li>
-				<li>Ant_GenTwoDigger</li>
-				<li>Ant_GenTwoEmpath</li>
-				<li>Ant_GenTwoTunnelGuardian</li>
-				<li>Ant_GenTwoArtisan</li>
-				<li>Ant_GenTwoArchitect</li>
-				<li>Ant_GenTwoMountaineer</li>
-				<li>Ant_GenTwoWarden</li>
-				<li>Ant_GenTwoMadScientist</li>
-				<li>Ant_GenTwoPatrol</li>
-				<li>Ant_GenTwoNurturing</li>
+				<li>Ant_Farmer</li>
+				<li>Ant_Digger</li>
+				<li>Ant_Empath</li>
+				<li>Ant_TunnelGuardian</li>
+				<li>Ant_Artisan</li>
+				<li>Ant_Architect</li>
+				<li>Ant_Mountaineer</li>
+				<li>Ant_Warden</li>
+				<li>Ant_MadScientist</li>
+				<li>Ant_Patrol</li>
+				<li>Ant_Nurturing</li>
 				<li>Ant_HiveQueenTrait</li>
             </traitList>
 			

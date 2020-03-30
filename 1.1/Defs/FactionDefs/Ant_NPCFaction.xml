@@ -156,6 +156,9 @@
     <defName>Ant_HiveCivil</defName>
     <label>friendly hive</label>
     <description>An Antinium hive that is somewhat open to dealing with outsiders.</description>
+	<backstoryCategories>
+	  <li>Ant_CivilBackstory</li>
+    </backstoryCategories>
     <colorSpectrum>
       <li>(0.85, 0.85, 0.25)</li>
       <li>(0.81, 0.85, 0.35)</li>
@@ -175,7 +178,10 @@
     <defName>Ant_HiveRough</defName>
     <label>savage hive</label>
     <description>An Antinium hive that is suspicious of outsiders.</description>
-    <colorSpectrum>
+    <backstoryCategories>
+	  <li>Ant_SavageBackstory</li>
+    </backstoryCategories>
+	<colorSpectrum>
 	  <li>(0.95, 0.6, 0.25)</li>
 	  <li>(0.85, 0.5, 0.15)</li>
     </colorSpectrum>

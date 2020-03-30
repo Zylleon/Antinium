@@ -39,25 +39,25 @@
       </li>
     </degreeDatas>
 	<conflictingTraits>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
 
 
-<!-- GenTwo Antinium -->
+<!--  Antinium -->
 
  <TraitDef>
-    <defName>Ant_GenTwoFarmer</defName>
+    <defName>Ant_Farmer</defName>
 	<disabledWorkTypes>
 		<li>Mining</li>
 	</disabledWorkTypes>
@@ -82,21 +82,21 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
   <TraitDef>
-    <defName>Ant_GenTwoDigger</defName>
+    <defName>Ant_Digger</defName>
 	<disabledWorkTypes>
 		<li>Doctor</li>
 		<li>Warden</li>
@@ -116,21 +116,21 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
   <TraitDef>
-    <defName>Ant_GenTwoEmpath</defName>
+    <defName>Ant_Empath</defName>
 	<disabledWorkTags>Violent</disabledWorkTags>
 	
     <degreeDatas>
@@ -147,22 +147,22 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
    
   <TraitDef>
-    <defName>Ant_GenTwoTunnelGuardian</defName>
+    <defName>Ant_TunnelGuardian</defName>
 	<disabledWorkTypes>
 		<li>Smithing</li>
 		<li>Tailoring</li>
@@ -189,23 +189,23 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
 
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
   
 <TraitDef>
-    <defName>Ant_GenTwoArtisan</defName>
+    <defName>Ant_Artisan</defName>
 	<disabledWorkTypes>
 		<li>Firefighter</li>
 		<li>Handling</li>
@@ -222,22 +222,22 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
 
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
   <TraitDef>
-    <defName>Ant_GenTwoArchitect</defName>
+    <defName>Ant_Architect</defName>
 	<disabledWorkTags>ManualDumb</disabledWorkTags>
     <degreeDatas>
     <li>
@@ -260,22 +260,22 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
 
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
     <TraitDef>
-    <defName>Ant_GenTwoMountaineer</defName>
+    <defName>Ant_Mountaineer</defName>
 	<disabledWorkTypes>
 		<li>Doctor</li>
 		<li>Smithing</li>
@@ -303,23 +303,23 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
 
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
    
    <TraitDef>
-    <defName>Ant_GenTwoWarden</defName>
+    <defName>Ant_Warden</defName>
 	<disabledWorkTypes>
 		<li>Cooking</li>
 		<li>Growing</li>
@@ -350,21 +350,21 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
    <TraitDef>
-    <defName>Ant_GenTwoMadScientist</defName>
+    <defName>Ant_MadScientist</defName>
 	<disabledWorkTypes>
 		<li>Mining</li>
 		<li>Warden</li>
@@ -395,22 +395,22 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
 
-	  <li>Ant_GenTwoPatrol</li>
-      <li>Ant_GenTwoNurturing</li>
+	  <li>Ant_Patrol</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
    <TraitDef>
-    <defName>Ant_GenTwoPatrol</defName>
+    <defName>Ant_Patrol</defName>
 	<disabledWorkTypes>
 		<li>Cooking</li>
 		<li>Art</li>	
@@ -436,22 +436,22 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
 
-      <li>Ant_GenTwoNurturing</li>
+      <li>Ant_Nurturing</li>
     </conflictingTraits>
   </TraitDef>
   
     <TraitDef>
-    <defName>Ant_GenTwoNurturing</defName>
+    <defName>Ant_Nurturing</defName>
     <degreeDatas>
     <li>
         <label>antinium nurturing</label>
@@ -472,16 +472,16 @@
     </degreeDatas>
 	<conflictingTraits>
       <li>Ant_HiveQueenTrait</li>
-	  <li>Ant_GenTwoFarmer</li>
-	  <li>Ant_GenTwoDigger</li>
-	  <li>Ant_GenTwoEmpath</li>
-	  <li>Ant_GenTwoTunnelGuardian</li>
-	  <li>Ant_GenTwoArtisan</li>
-	  <li>Ant_GenTwoArchitect</li>
-	  <li>Ant_GenTwoMountaineer</li>
-	  <li>Ant_GenTwoWarden</li>
-	  <li>Ant_GenTwoMadScientist</li>
-	  <li>Ant_GenTwoPatrol</li>
+	  <li>Ant_Farmer</li>
+	  <li>Ant_Digger</li>
+	  <li>Ant_Empath</li>
+	  <li>Ant_TunnelGuardian</li>
+	  <li>Ant_Artisan</li>
+	  <li>Ant_Architect</li>
+	  <li>Ant_Mountaineer</li>
+	  <li>Ant_Warden</li>
+	  <li>Ant_MadScientist</li>
+	  <li>Ant_Patrol</li>
     </conflictingTraits>
   </TraitDef>
   

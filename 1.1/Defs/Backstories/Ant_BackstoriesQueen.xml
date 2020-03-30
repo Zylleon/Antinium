@@ -36,17 +36,17 @@
 		<relationChanceModifierSibling>0</relationChanceModifierSibling>
     </relationSettings>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 
 	</disallowedTraits>
 </AlienRace.BackstoryDef>

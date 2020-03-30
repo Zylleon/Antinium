@@ -3,7 +3,7 @@
 
 <!--Starting pawn for players-->
 
- <PawnKindDef Abstract="True" Name="Ant_GenTwoBasePawnkind">
+ <PawnKindDef Abstract="True" Name="Ant_BasePawnkind">
     <race>Ant_AntiniumRace</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
@@ -12,7 +12,7 @@
     <forceNormalGearQuality>true</forceNormalGearQuality>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="Ant_GenTwoBasePawnkind">
+  <PawnKindDef ParentName="Ant_BasePawnkind">
     <defName>Ant_AntiniumQueen</defName>
     <label>antinium queen</label>
     <defaultFactionType>Ant_QueenFaction</defaultFactionType>
@@ -29,10 +29,10 @@
 
   
   <!--
-<PawnKindDef ParentName="Ant_GenTwoBasePawnkind">
-    <defName>Antinium_GenTwo</defName>
+<PawnKindDef ParentName="Ant_BasePawnkind">
+    <defName>Antinium_</defName>
     <label>antinium</label>
-    <defaultFactionType>Ant_GenTwoFaction</defaultFactionType>
+    <defaultFactionType>Ant_Faction</defaultFactionType>
     <backstoryCategories>
 		<li>Ant_SpecialBackstory</li>
   	</backstoryCategories>

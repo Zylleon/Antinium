@@ -27,12 +27,12 @@
       </li>
     </skillGains>
 	<workDisables>
-        <li>Artistic</li>
 		<li>Social</li> 
 		<li>Cooking</li>
 		<li>PlantWork</li>
-		<li>Intellectual</li>
 		<li>Crafting</li>
+        <li>Artistic</li>
+		<li>Intellectual</li>
     </workDisables>
 	<forcedTraits>
         <li>
@@ -44,17 +44,17 @@
         <li>
             <defName>Kind</defName>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -70,27 +70,27 @@
       <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
+	  <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
       <li>
         <defName>Melee</defName>
         <amount>8</amount>
       </li>
 	  <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <defName>Cooking</defName>
+        <amount>-3</amount>
       </li>
 	  <li>
         <defName>Plants</defName>
         <amount>-3</amount>
       </li>
-	  	  <li>
-        <defName>Cooking</defName>
-        <amount>-3</amount>
-      </li>
     </skillGains>
 	<workDisables>
-        <li>Artistic</li>
-		<li>Crafting</li>
 		<li>Social</li>
+		<li>Crafting</li>
+		<li>Artistic</li>
 		<li>Intellectual</li>
     </workDisables>
 	<forcedTraits>
@@ -110,17 +110,17 @@
 		<li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -137,24 +137,24 @@
     </spawnCategories>
 	<skillGains>
       <li>
-        <defName>Mining</defName>
-        <amount>4</amount>
-      </li>
-	  <li>
         <defName>Construction</defName>
         <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
       </li>
 	  <li>
         <defName>Crafting</defName>
         <amount>2</amount>
       </li>
-		<li>
-        <defName>Intellectual</defName>
-        <amount>-6</amount>
-      </li>
 	  <li>
         <defName>Artistic</defName>
         <amount>-3</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>-6</amount>
       </li>
     </skillGains>
 	<forcedTraits>
@@ -164,17 +164,17 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -190,27 +190,27 @@
       <li>Ant_BasicBackstory</li>
     </spawnCategories>
 	<skillGains>
-      <li>
-        <defName>Mining</defName>
-        <amount>2</amount>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
       </li>
 	  <li>
         <defName>Construction</defName>
         <amount>2</amount>
       </li>
-		<li>
-        <defName>Social</defName>
-        <amount>-4</amount>
-      </li>
 	  <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <defName>Mining</defName>
+        <amount>2</amount>
       </li>
     </skillGains>
 	<workDisables>
-        <li>Artistic</li>
+        <li>Caring</li>
 		<li>Animals</li>
-		<li>Caring</li>
+		<li>Artistic</li>
 		<li>Intellectual</li>
     </workDisables>
 	<forcedTraits>
@@ -220,17 +220,17 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -247,6 +247,10 @@
     </spawnCategories>
 	<skillGains>
       <li>
+        <defName>Medicine</defName>
+        <amount>10</amount>
+      </li>
+	  <li>
         <defName>Animals</defName>
         <amount>3</amount>
       </li>
@@ -254,15 +258,11 @@
         <defName>Intellectual</defName>
         <amount>8</amount>
       </li>
-	  <li>
-        <defName>Medicine</defName>
-        <amount>10</amount>
-      </li>
     </skillGains>
 	<workDisables>
-        <li>ManualDumb</li>
-		<li>Mining</li>
 		<li>PlantWork</li>
+		<li>Mining</li>
+		<li>ManualDumb</li>
     </workDisables>
 	<forcedTraits>
         <li>
@@ -283,17 +283,17 @@
         <li>
             <defName>Bloodlust</defName>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -314,15 +314,15 @@
         <amount>7</amount>
       </li>
 	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
         <defName>Medicine</defName>
         <amount>3</amount>
       </li>
 	  <li>
         <defName>Plants</defName>
-        <amount>3</amount>
-      </li>
-	  <li>
-        <defName>Melee</defName>
         <amount>3</amount>
       </li>
     </skillGains>
@@ -338,17 +338,17 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -369,17 +369,17 @@
         <amount>10</amount>
       </li>
 	  <li>
-        <defName>Artistic</defName>
-        <amount>7</amount>
-      </li>
-	  <li>
         <defName>Construction</defName>
         <amount>-2</amount>
       </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>7</amount>
+      </li>
     </skillGains>
 	<workDisables>
-        <li>Social</li>
-		<li>Caring</li>
+        <li>Caring</li>
+		<li>Social</li>
     </workDisables>
 	<forcedTraits>
         <li>
@@ -391,17 +391,17 @@
         <li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -418,34 +418,34 @@
     </spawnCategories>
 	<skillGains>
       <li>
-        <defName>Artistic</defName>
-        <amount>7</amount>
+        <defName>Melee</defName>
+        <amount>-3</amount>
       </li>
 	  <li>
         <defName>Social</defName>
         <amount>6</amount>
+      </li>	 
+	 <li>
+        <defName>Artistic</defName>
+        <amount>7</amount>
       </li>
 	  <li>
         <defName>Intellectual</defName>
         <amount>6</amount>
       </li>
-	  	  <li>
-        <defName>Melee</defName>
-        <amount>-3</amount>
-      </li>
     </skillGains>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -462,30 +462,34 @@
     </spawnCategories>
 	<skillGains>
       <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
         <defName>Artistic</defName>
         <amount>3</amount>
       </li>
 	  <li>
-        <defName>Social</defName>
-        <amount>4</amount>
-      </li>
-	  <li>
         <defName>Intellectual</defName>
-        <amount>4</amount>
+        <amount>2</amount>
       </li>
     </skillGains>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -502,12 +506,12 @@
     </spawnCategories>
 	<skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>6</amount>
-      </li>
-	  <li>
         <defName>Melee</defName>
         <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>6</amount>
       </li>
 	  <li>
         <defName>Mining</defName>
@@ -531,17 +535,17 @@
             <defName>PsychicSensitivity</defName>
 			<degree>-2</degree>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -567,8 +571,8 @@
       </li>
     </skillGains>
 	<workDisables>
-        <li>Artistic</li>
-		<li>Social</li> 
+        <li>Social</li> 
+		<li>Artistic</li>
 		<li>Intellectual</li>
     </workDisables>
 	<forcedTraits>
@@ -581,17 +585,17 @@
         <li>
             <defName>Wimp</defName>
         </li>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
     </disallowedTraits>
 </AlienRace.BackstoryDef>
@@ -608,16 +612,16 @@
     </spawnCategories>
 	<skillGains>
       <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
         <defName>Cooking</defName>
         <amount>5</amount>
       </li>
 	  <li>
         <defName>Plants</defName>
         <amount>6</amount>
-      </li>
-	  <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
       </li>
 	  <li>
         <defName>Mining</defName>
@@ -634,17 +638,17 @@
         </li>
     </forcedTraits>
 	<disallowedTraits>
-		<li><defName>Ant_GenTwoFarmer</defName></li>
-		<li><defName>Ant_GenTwoDigger</defName></li>
-		<li><defName>Ant_GenTwoEmpath</defName></li>
-		<li><defName>Ant_GenTwoTunnelGuardian</defName></li>
-		<li><defName>Ant_GenTwoArtisan</defName></li>
-		<li><defName>Ant_GenTwoArchitect</defName></li>
-		<li><defName>Ant_GenTwoMountaineer</defName></li>
-		<li><defName>Ant_GenTwoWarden</defName></li>
-		<li><defName>Ant_GenTwoMadScientist</defName></li>
-		<li><defName>Ant_GenTwoPatrol</defName></li>
-		<li><defName>Ant_GenTwoNurturing</defName></li>
+		<li><defName>Ant_Farmer</defName></li>
+		<li><defName>Ant_Digger</defName></li>
+		<li><defName>Ant_Empath</defName></li>
+		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Artisan</defName></li>
+		<li><defName>Ant_Architect</defName></li>
+		<li><defName>Ant_Mountaineer</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_MadScientist</defName></li>
+		<li><defName>Ant_Patrol</defName></li>
+		<li><defName>Ant_Nurturing</defName></li>
 		<li><defName>Ant_HiveQueenTrait</defName></li>
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
