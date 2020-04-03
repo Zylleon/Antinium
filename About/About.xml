@@ -7,6 +7,17 @@
 	<li>1.1</li>
   </supportedVersions>
    <packageId>zylle.Antinium</packageId>
+<modDependencies>
+    <li>
+        <packageId>erdelf.HumanoidAlienRaces</packageId>
+        <displayName>Humanoid Alien Races 2.0</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+        <downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces/releases</downloadUrl>
+    </li>
+</modDependencies>
+<loadAfter>
+	<li>erdelf.HumanoidAlienRaces</li>
+</loadAfter>
   <description>
 Adds a new playable race based on the Antinium from the Wandering Inn web serial.
 
@@ -18,6 +29,11 @@ Antinium like eating insect meat and are less bothered by cannibalism or mistrea
 
 Requires Humanoid Alien Races: https://steamcommunity.com/workshop/filedetails/?id=839005762
 
-Highly recommend using Melee Hunting: https://steamcommunity.com/sharedfiles/filedetails/?id=832151070
+Github: https://github.com/Zylleon/Antinium/releases/latest
+
+Support me: https://ko-fi.com/zylleon
+Discord: https://discord.gg/4EFv76C]Discord
+My other mods: https://steamcommunity.com/profiles/76561197998830956/myworkshopfiles/?appid=294100
+
   </description>
 </ModMetaData>

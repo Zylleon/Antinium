@@ -26,28 +26,27 @@
 	<relationSettings>
 		<relationChanceModifierLover>0</relationChanceModifierLover>
 		<relationChanceModifierExLover>0</relationChanceModifierExLover>
-
 		<relationChanceModifierFiance>0</relationChanceModifierFiance>
 		<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 		<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
-
 		<relationChanceModifierParent>0</relationChanceModifierParent>
 		<relationChanceModifierChild>0</relationChanceModifierChild>
 		<relationChanceModifierSibling>0</relationChanceModifierSibling>
     </relationSettings>
 	<disallowedTraits>
-		<li><defName>Ant_Farmer</defName></li>
 		<li><defName>Ant_Digger</defName></li>
 		<li><defName>Ant_Empath</defName></li>
 		<li><defName>Ant_TunnelGuardian</defName></li>
+		<li><defName>Ant_Ranger</defName></li>
+		<li><defName>Ant_Warden</defName></li>
+		<li><defName>Ant_GeneResearcher</defName></li>
+		<li><defName>Ant_Caretaker</defName></li>
+		<!--
+		<li><defName>Ant_Farmer</defName></li>
 		<li><defName>Ant_Artisan</defName></li>
 		<li><defName>Ant_Architect</defName></li>
-		<li><defName>Ant_Mountaineer</defName></li>
-		<li><defName>Ant_Warden</defName></li>
-		<li><defName>Ant_MadScientist</defName></li>
 		<li><defName>Ant_Patrol</defName></li>
-		<li><defName>Ant_Nurturing</defName></li>
-
+		-->
 	</disallowedTraits>
 </AlienRace.BackstoryDef>
 
@@ -68,11 +67,9 @@
 	<relationSettings>
 		<relationChanceModifierLover>0</relationChanceModifierLover>
 		<relationChanceModifierExLover>0</relationChanceModifierExLover>
-
 		<relationChanceModifierFiance>0</relationChanceModifierFiance>
 		<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 		<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
-
 		<relationChanceModifierParent>0</relationChanceModifierParent>
 		<relationChanceModifierChild>0</relationChanceModifierChild>
 		<relationChanceModifierSibling>0</relationChanceModifierSibling>
