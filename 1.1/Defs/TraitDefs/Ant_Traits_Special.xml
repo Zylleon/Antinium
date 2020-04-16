@@ -68,7 +68,7 @@
     <degreeDatas>
     <li>
         <label>antinium ranger</label>
-        <description>{PAWN_nameDef} was designed to patroll the outskirts of [PAWN_posessive] territory for intruders.</description>
+        <description>{PAWN_nameDef} was designed to patroll the outskirts of [PAWN_possessive] territory for intruders.</description>
 		<marketValueFactorOffset>0.40</marketValueFactorOffset>
 		<statOffsets>
 		  <MiningSpeed>.10</MiningSpeed>
@@ -277,7 +277,7 @@
     <degreeDatas>
     <li>
         <label>tunnel guardian</label>
-        <description>{PAWN_nameDef} was designed to expand and guard the tunnels of [PAWN_posessive] hive.</description>
+        <description>{PAWN_nameDef} was designed to expand and guard the tunnels of [PAWN_possessive] hive.</description>
 		<marketValueFactorOffset>0.40</marketValueFactorOffset>
 		<statOffsets>
 		  <MiningSpeed>.10</MiningSpeed>
